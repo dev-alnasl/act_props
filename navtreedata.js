@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "act props", "index.html", [
+    [ "DPS310 Usage Example", "md_doxygen-manuals_2usage__example__dps310.html", [
+      [ "Unit Testing", "md_doxygen-manuals_2usage__example__dps310.html#autotoc_md1", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
