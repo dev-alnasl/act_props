@@ -1,0 +1,19 @@
+html {
+    /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
+    --primary-color: #751b43;
+    --primary-dark-color: #561d36;
+    --primary-light-color: #872d55;
+
+    /* page base colors */
+    --page-background-color: #ffffff;
+    --page-foreground-color: #1a0b10;
+    --page-secondary-foreground-color: #615e58;
+
+    /* color for all separators on the website: hr, borders, ... */
+    --separator-color: #dedede;
+}
+
+html, .label {
+    --font-family: Raleway, "Zen Kaku Gothic New", "BIZ UDGothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-feature-settings: "lnum" !important;
+}
