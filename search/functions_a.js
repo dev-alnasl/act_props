@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['setaddress_0',['setAddress',['../classDPS310.html#a64d1cd42b5c849cf4dacb71771db3e30',1,'DPS310']]],
-  ['setas_1',['setAs',['../classDPS310.html#ace70061f12ead9d69f2236ceaa9c3dc7',1,'DPS310']]],
-  ['seterror_2',['setError',['../classDPS310.html#a6db35f772a995a986767e76f923b3748',1,'DPS310']]],
-  ['setoperationmode_3',['setOperationMode',['../classDPS310.html#a15f191d87c3c4feeba3230b679a426bc',1,'DPS310']]],
-  ['setsettings_4',['setSettings',['../classDPS310.html#abd1f8a1a2b0e159b25cebba9fd00d392',1,'DPS310']]],
-  ['settings_5',['Settings',['../structDPS310_1_1Settings.html#abe7e23da864d70beba845c182b557cfe',1,'DPS310::Settings::Settings()'],['../structDPS310_1_1Settings.html#af4141a1fa4ab469c69544d74fd5751d9',1,'DPS310::Settings::Settings(SamplingRate tsr=SamplingRate::SAMPLING_1HZ, Precision tp=Precision::STANDARD_16X, TemperatureSource tsc=TemperatureSource::MEMS_HIGH_PRECISION, SamplingRate psr=SamplingRate::SAMPLING_1HZ, Precision pp=Precision::STANDARD_16X)'],['../structDPS310_1_1Settings.html#a387ceea3043527527d3dca93d8391ff2',1,'DPS310::Settings::Settings(Presets preset)']]],
-  ['setup_6',['setup',['../classDPS310.html#ad417af9cc751ac71feced8fe2ee44d3c',1,'DPS310']]],
-  ['softreset_7',['softReset',['../classDPS310.html#ad006821b6671b1bc126acf82b1fe54bb',1,'DPS310']]]
+  ['read_0',['read',['../classADS1x1x.html#a4e9baee0d4f37ba592e438e6e7b43755',1,'ADS1x1x::read(uint16_t *const voltage)'],['../classADS1x1x.html#a1c46dfc048674a5a264d17eeba3223e5',1,'ADS1x1x::read(const Register reg, uint8_t *const dst)'],['../classADS1x1x.html#a391ca36e639403f0963e7e2b4e35224f',1,'ADS1x1x::read(const Register reg, uint16_t *const dst)'],['../classDPS310.html#aeded9fb3426e08dda07d9d97e1eb6624',1,'DPS310::read(float *const temperature, float *const pressure)'],['../classDPS310.html#a538a331a84d7eeda81d70d0645c665da',1,'DPS310::read(const Register reg, uint8_t *const dst)'],['../classDPS310.html#a074b7866b06827e8b1c6054b44a57578',1,'DPS310::read(const Register reg, uint16_t *const dst)'],['../class__DEVICE__.html#a992cb2bab227add91328ec5316be890e',1,'_DEVICE_::read(int32_t *const value)'],['../class__DEVICE__.html#a2cdf9b4b549032d9834942f4a5d06ddd',1,'_DEVICE_::read(const Register reg, uint8_t *const dst)'],['../class__DEVICE__.html#aaaa9c6a96b37922ed5e445307c6f4839',1,'_DEVICE_::read(const Register reg, uint16_t *const dst)']]],
+  ['readid_1',['readId',['../classDPS310.html#a0c3c35624fee15451d62c7122959f86c',1,'DPS310']]],
+  ['request_2',['request',['../classADS1x1x.html#a489a145fee9f0c95fb7c6f30b1b8b1d3',1,'ADS1x1x::request()'],['../classDPS310.html#a53cb9578017d994e7839ac72ea7620d2',1,'DPS310::request()'],['../class__DEVICE__.html#a2b6dfbb050a9c33f49158f10ef66a9ab',1,'_DEVICE_::request()']]]
 ];

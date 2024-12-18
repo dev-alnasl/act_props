@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['temperaturesource_0',['TemperatureSource',['../classDPS310.html#ad5672e0cd2b114f2c2907f95379885cd',1,'DPS310']]],
-  ['tmp_5fcfg_1',['TMP_CFG',['../classDPS310.html#a1ebf5a3e9955dce1fce906a158c0e975',1,'DPS310']]]
+  ['samplingrate_0',['SamplingRate',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8e',1,'DPS310']]],
+  ['state_1',['State',['../classADS1x1x.html#a78975d547fbbf62ba4ebcd750e69fd7e',1,'ADS1x1x::State'],['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35',1,'DPS310::State'],['../class__DEVICE__.html#a849bade2d7f7bdf10864d54d18633d3b',1,'_DEVICE_::State']]]
 ];

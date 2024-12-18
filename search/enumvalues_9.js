@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['p_5fshift_0',['P_SHIFT',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaa94f2b51b9e96949e0ad3b5c7c8cf7f7a',1,'DPS310']]],
-  ['pres_5fbusy_1',['PRES_BUSY',['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35a324fa7a613a5917c0d2516c95b3d4a7d',1,'DPS310']]],
-  ['pres_5fcomplete_2',['PRES_COMPLETE',['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35ad8e1bb8e007b56e6228cec25e8205a69',1,'DPS310']]],
-  ['pres_5ferror_3',['PRES_ERROR',['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35a506a6812531a4596b831fc108ed120f3',1,'DPS310']]],
-  ['primary_4',['PRIMARY',['../classDPS310.html#acc63231a5aeb9fa897fe8a8f6734f6cfa428429ba9ea83e4841036fb0508fd6dc',1,'DPS310']]],
-  ['product_5fid_5',['PRODUCT_ID',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da137e1bc1cfff58cc61e51634ce69c7eb',1,'DPS310']]],
-  ['prs_5fb0_6',['PRS_B0',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da11ace1faea11d27ff8aaf20d143e7f33',1,'DPS310']]],
-  ['prs_5fb1_7',['PRS_B1',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dadb660dc4e2e82c5d508fb9edd97bfedd',1,'DPS310']]],
-  ['prs_5fb2_8',['PRS_B2',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da0f43b2c009c02ceb56d6341a9616936b',1,'DPS310']]],
-  ['prs_5fcfg_9',['PRS_CFG',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da3a66f174f4a38a02d40c33868ea3d6c7',1,'DPS310']]],
-  ['prs_5frdy_10',['PRS_RDY',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0aae656d4483c23c0f4a96a29b5d8b10b9',1,'DPS310']]]
+  ['meas_5fcfg_0',['MEAS_CFG',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daebb21468f7391fe07903959a7889856b',1,'DPS310']]],
+  ['meas_5fctrl0_1',['MEAS_CTRL0',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0a127157cd64b3e6022bcde6b53e90e977',1,'DPS310']]],
+  ['meas_5fctrl1_2',['MEAS_CTRL1',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0a45655f013acafe9e7b1744d79077d8a0',1,'DPS310']]],
+  ['meas_5fctrl2_3',['MEAS_CTRL2',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0ab12de3c99c16c289cf0ba95027fcbb67',1,'DPS310']]],
+  ['mems_5fhigh_5fprecision_4',['MEMS_HIGH_PRECISION',['../classDPS310.html#ad5672e0cd2b114f2c2907f95379885cdad5fba36dcd0da23819f69ed153f8588c',1,'DPS310']]]
 ];

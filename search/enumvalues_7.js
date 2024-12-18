@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['meas_5fcfg_0',['MEAS_CFG',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daebb21468f7391fe07903959a7889856b',1,'DPS310']]],
-  ['meas_5fctrl0_1',['MEAS_CTRL0',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0a127157cd64b3e6022bcde6b53e90e977',1,'DPS310']]],
-  ['meas_5fctrl1_2',['MEAS_CTRL1',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0a45655f013acafe9e7b1744d79077d8a0',1,'DPS310']]],
-  ['meas_5fctrl2_3',['MEAS_CTRL2',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0ab12de3c99c16c289cf0ba95027fcbb67',1,'DPS310']]],
-  ['mems_5fhigh_5fprecision_4',['MEMS_HIGH_PRECISION',['../classDPS310.html#ad5672e0cd2b114f2c2907f95379885cdad5fba36dcd0da23819f69ed153f8588c',1,'DPS310']]]
+  ['idle_0',['IDLE',['../classADS1x1x.html#a78975d547fbbf62ba4ebcd750e69fd7eaa5daf7f2ebbba4975d61dab1c40188c7',1,'ADS1x1x::IDLE'],['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35aa5daf7f2ebbba4975d61dab1c40188c7',1,'DPS310::IDLE'],['../class__DEVICE__.html#a849bade2d7f7bdf10864d54d18633d3baa5daf7f2ebbba4975d61dab1c40188c7',1,'_DEVICE_::IDLE']]],
+  ['int_5ffifo_1',['INT_FIFO',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaad786bbdd715ae3a6c196b05412fd848b',1,'DPS310']]],
+  ['int_5ffifo_5ffull_2',['INT_FIFO_FULL',['../classDPS310.html#a5c177c1b6b6a02327da2bb18317c0d61ae5fc56d792697d1408623d88cfd782d6',1,'DPS310']]],
+  ['int_5fhl_3',['INT_HL',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaa995d923bd9d81040c7a330f8296f6c3d',1,'DPS310']]],
+  ['int_5fprs_4',['INT_PRS',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaa448fea00c6534adfba7a787cc8cb552f',1,'DPS310::INT_PRS'],['../classDPS310.html#a5c177c1b6b6a02327da2bb18317c0d61a448fea00c6534adfba7a787cc8cb552f',1,'DPS310::INT_PRS']]],
+  ['int_5fsts_5',['INT_STS',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da2b456afb13461297cac6c1c5d23fae67',1,'DPS310']]],
+  ['int_5ftmp_6',['INT_TMP',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaab1792c773054f802bce8dcdb46c52b0a',1,'DPS310::INT_TMP'],['../classDPS310.html#a5c177c1b6b6a02327da2bb18317c0d61ab1792c773054f802bce8dcdb46c52b0a',1,'DPS310::INT_TMP']]]
 ];

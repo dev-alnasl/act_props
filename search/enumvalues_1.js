@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['c00_5flsb_5fc10_5fmsb_0',['C00_LSB_C10_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da6be08f22fe989e32664f856fbab88d45',1,'DPS310']]],
-  ['c00_5fmid_1',['C00_MID',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daac1ec59352d5c8b0c9abfa97d92b0298',1,'DPS310']]],
-  ['c00_5fmsb_2',['C00_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daf6966164ccb5c49f419f77c4edc8fbe0',1,'DPS310']]],
-  ['c01_5flsb_3',['C01_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da2d10392fcd90889e4c40823ec9d44e6f',1,'DPS310']]],
-  ['c01_5fmsb_4',['C01_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dadb16940c5558a2e68aeeacfe7498e93b',1,'DPS310']]],
-  ['c0_5flsb_5fc1_5fmsb_5',['C0_LSB_C1_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da91227c73b4f0661326a35c2d343c0fe3',1,'DPS310']]],
-  ['c0_5fmsb_6',['C0_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da4f6c7c6d23bac829211cda676a5b6d38',1,'DPS310']]],
-  ['c10_5flsb_7',['C10_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dadb9dd816f98bbbf2bb8aaee23a831696',1,'DPS310']]],
-  ['c10_5fmid_8',['C10_MID',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dabc059b778367a8dd4160ab444e615959',1,'DPS310']]],
-  ['c11_5flsb_9',['C11_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da6ae7473dcaf7d85278d0972df0eb6d74',1,'DPS310']]],
-  ['c11_5fmsb_10',['C11_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dac4f64954559568d922b6f4f751af36f2',1,'DPS310']]],
-  ['c1_5flsb_11',['C1_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da0bd3a3a71b4519b094fc95cdaeb82466',1,'DPS310']]],
-  ['c20_5flsb_12',['C20_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da2ac410b9d10ab75d30dd3e1df2e12ad4',1,'DPS310']]],
-  ['c20_5fmsb_13',['C20_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daabf6dd2bb95d1ab49aa03daef313bd9f',1,'DPS310']]],
-  ['c21_5flsb_14',['C21_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da0fcdfa1836f53214506dff17510c08ac',1,'DPS310']]],
-  ['c21_5fmsb_15',['C21_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da784d682309642b133eb2900bbff73e21',1,'DPS310']]],
-  ['c30_5flsb_16',['C30_LSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823daef374aa656c71a82138ea51497704c80',1,'DPS310']]],
-  ['c30_5fmsb_17',['C30_MSB',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da81299606bedc03b0f1b77ea3d22ddcf6',1,'DPS310']]],
-  ['cfg_5freg_18',['CFG_REG',['../classDPS310.html#a78dff1806969c21299b20342d6b7823da387e0f6d80edfaecfc4e65b0a62d9c1d',1,'DPS310']]],
-  ['coef_5frdy_19',['COEF_RDY',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0ab89b948dc0f5e831b9de57099b37a3c0',1,'DPS310']]],
-  ['coef_5fsrce_20',['COEF_SRCE',['../classDPS310.html#a78dff1806969c21299b20342d6b7823dad460cc789dd2feda0ab10617fda04b0d',1,'DPS310']]],
-  ['continuous_5fpressure_21',['CONTINUOUS_PRESSURE',['../classDPS310.html#aeed88f815a7ec27b9b323778089ddf5da2c6efdf90091d154143ecd2d33414db1',1,'DPS310']]],
-  ['continuous_5fpressure_5fand_5ftemperature_22',['CONTINUOUS_PRESSURE_AND_TEMPERATURE',['../classDPS310.html#aeed88f815a7ec27b9b323778089ddf5da9c7b8702b884fac99b6a017062f1d9ad',1,'DPS310']]],
-  ['continuous_5ftemperature_23',['CONTINUOUS_TEMPERATURE',['../classDPS310.html#aeed88f815a7ec27b9b323778089ddf5dadc0494a414539d920d05ff2e22533fac',1,'DPS310']]]
+  ['busy_0',['BUSY',['../classADS1x1x.html#a78975d547fbbf62ba4ebcd750e69fd7ea802706a9238e2928077f97736854bad4',1,'ADS1x1x::BUSY'],['../class__DEVICE__.html#a849bade2d7f7bdf10864d54d18633d3ba802706a9238e2928077f97736854bad4',1,'_DEVICE_::BUSY']]]
 ];

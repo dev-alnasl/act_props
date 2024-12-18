@@ -128,7 +128,7 @@ $(function(){initNavTree('classDPS310.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Header file dependency for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor communication.  
+<p>Header file dependency.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DPS310_8hpp_source.html">DPS310.hpp</a>&gt;</code></p>
@@ -136,7 +136,7 @@ $(function(){initNavTree('classDPS310.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDPS310_1_1Settings.html">Settings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration settings for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor measurements.  <a href="structDPS310_1_1Settings.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration settings for the device measurements.  <a href="structDPS310_1_1Settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -144,7 +144,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:acc63231a5aeb9fa897fe8a8f6734f6cf" id="r_acc63231a5aeb9fa897fe8a8f6734f6cf"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cf">Address</a> : uint8_t { <a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cfa428429ba9ea83e4841036fb0508fd6dc">PRIMARY</a> = 0x77
 , <a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cfa371b09d93ca01e09a42fbd5a2a423f8e">SECONDARY</a> = 0x76
  }</td></tr>
-<tr class="memdesc:acc63231a5aeb9fa897fe8a8f6734f6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class defining possible I2C addresses for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a>.  <a href="#acc63231a5aeb9fa897fe8a8f6734f6cf">More...</a><br /></td></tr>
+<tr class="memdesc:acc63231a5aeb9fa897fe8a8f6734f6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class defining possible I2C addresses for the device.  <a href="#acc63231a5aeb9fa897fe8a8f6734f6cf">More...</a><br /></td></tr>
 <tr class="separator:acc63231a5aeb9fa897fe8a8f6734f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2fc3581d359a772938d97f21052d8e" id="r_a4c2fc3581d359a772938d97f21052d8e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c2fc3581d359a772938d97f21052d8e">SamplingRate</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="#a4c2fc3581d359a772938d97f21052d8ea555463de129a926107fc9e7562d03705">SAMPLING_1HZ</a> = 0b000
@@ -158,7 +158,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a4c2fc3581d359a772938d97f21052d8ea415224cbaa114bf8ac67ee0de4503041">SAMPLING_128HZ</a> = 0b111
 <br />
  }</td></tr>
-<tr class="memdesc:a4c2fc3581d359a772938d97f21052d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for available sampling rates for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> measurements.  <a href="#a4c2fc3581d359a772938d97f21052d8e">More...</a><br /></td></tr>
+<tr class="memdesc:a4c2fc3581d359a772938d97f21052d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for available sampling rates for the device measurements.  <a href="#a4c2fc3581d359a772938d97f21052d8e">More...</a><br /></td></tr>
 <tr class="separator:a4c2fc3581d359a772938d97f21052d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac02f5f8729d43622189de04a4cb4c55f" id="r_ac02f5f8729d43622189de04a4cb4c55f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02f5f8729d43622189de04a4cb4c55f">Precision</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="#ac02f5f8729d43622189de04a4cb4c55fa5ec6cd5293d60843f744182c391732d7">LOW_1X</a> = 0b0000
@@ -184,7 +184,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="#aeed88f815a7ec27b9b323778089ddf5da9c7b8702b884fac99b6a017062f1d9ad">CONTINUOUS_PRESSURE_AND_TEMPERATURE</a> = 0b111
 <br />
  }</td></tr>
-<tr class="memdesc:aeed88f815a7ec27b9b323778089ddf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for available operating modes of <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a>.  <a href="#aeed88f815a7ec27b9b323778089ddf5d">More...</a><br /></td></tr>
+<tr class="memdesc:aeed88f815a7ec27b9b323778089ddf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for available operating modes of the device.  <a href="#aeed88f815a7ec27b9b323778089ddf5d">More...</a><br /></td></tr>
 <tr class="separator:aeed88f815a7ec27b9b323778089ddf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5672e0cd2b114f2c2907f95379885cd" id="r_ad5672e0cd2b114f2c2907f95379885cd"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5672e0cd2b114f2c2907f95379885cd">TemperatureSource</a> : uint8_t { <a class="el" href="#ad5672e0cd2b114f2c2907f95379885cda735d7b1d32a97afae5e4dbfc5cc5018f">ASIC_LOW_POWER</a> = 0
 , <a class="el" href="#ad5672e0cd2b114f2c2907f95379885cdad5fba36dcd0da23819f69ed153f8588c">MEMS_HIGH_PRECISION</a> = 1
@@ -196,40 +196,40 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ae0527df587760b73196c4ded483ff7ef">FAILED_BUSY</a>
 , <a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e">FAILED_UNKNOWN</a>
  }</td></tr>
-<tr class="memdesc:a74fde4e100a50ee4db0baf53a140a5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for operation results of <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> methods.  <a href="#a74fde4e100a50ee4db0baf53a140a5f4">More...</a><br /></td></tr>
+<tr class="memdesc:a74fde4e100a50ee4db0baf53a140a5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class for operation results of the device methods.  <a href="#a74fde4e100a50ee4db0baf53a140a5f4">More...</a><br /></td></tr>
 <tr class="separator:a74fde4e100a50ee4db0baf53a140a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae02420431169fd40747bcaa529c12912" id="r_ae02420431169fd40747bcaa529c12912"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae02420431169fd40747bcaa529c12912">DPS310</a> ()</td></tr>
-<tr class="memdesc:ae02420431169fd40747bcaa529c12912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> class.  <br /></td></tr>
+<tr class="memdesc:ae02420431169fd40747bcaa529c12912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the device interface.  <br /></td></tr>
 <tr class="separator:ae02420431169fd40747bcaa529c12912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8431dbc40059868ad1cab79bccc546ae" id="r_a8431dbc40059868ad1cab79bccc546ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8431dbc40059868ad1cab79bccc546ae">~DPS310</a> ()</td></tr>
-<tr class="memdesc:a8431dbc40059868ad1cab79bccc546ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> class.  <br /></td></tr>
+<tr class="memdesc:a8431dbc40059868ad1cab79bccc546ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the device interface.  <br /></td></tr>
 <tr class="separator:a8431dbc40059868ad1cab79bccc546ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8de90dbec7b69156d21e31cd247f173" id="r_ae8de90dbec7b69156d21e31cd247f173"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8de90dbec7b69156d21e31cd247f173">getErrorMessage</a> ()</td></tr>
 <tr class="memdesc:ae8de90dbec7b69156d21e31cd247f173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the latest error message.  <br /></td></tr>
 <tr class="separator:ae8de90dbec7b69156d21e31cd247f173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bff480d2bb0f00e0ee38c035de0f0e6" id="r_a8bff480d2bb0f00e0ee38c035de0f0e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cf">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bff480d2bb0f00e0ee38c035de0f0e6">getAddress</a> () const</td></tr>
-<tr class="memdesc:a8bff480d2bb0f00e0ee38c035de0f0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the I2C address of the sensor.  <br /></td></tr>
+<tr class="memdesc:a8bff480d2bb0f00e0ee38c035de0f0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the I2C address of the device.  <br /></td></tr>
 <tr class="separator:a8bff480d2bb0f00e0ee38c035de0f0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d1cd42b5c849cf4dacb71771db3e30" id="r_a64d1cd42b5c849cf4dacb71771db3e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64d1cd42b5c849cf4dacb71771db3e30">setAddress</a> (const <a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cf">Address</a> address)</td></tr>
-<tr class="memdesc:a64d1cd42b5c849cf4dacb71771db3e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the I2C address of the sensor.  <br /></td></tr>
+<tr class="memdesc:a64d1cd42b5c849cf4dacb71771db3e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the I2C address of the device.  <br /></td></tr>
 <tr class="separator:a64d1cd42b5c849cf4dacb71771db3e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f05c0d869365c0216f80edb4da43338" id="r_a3f05c0d869365c0216f80edb4da43338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDPS310_1_1Settings.html">Settings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f05c0d869365c0216f80edb4da43338">getSettings</a> ()</td></tr>
-<tr class="memdesc:a3f05c0d869365c0216f80edb4da43338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current sensor settings.  <br /></td></tr>
+<tr class="memdesc:a3f05c0d869365c0216f80edb4da43338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current device settings.  <br /></td></tr>
 <tr class="separator:a3f05c0d869365c0216f80edb4da43338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd1f8a1a2b0e159b25cebba9fd00d392" id="r_abd1f8a1a2b0e159b25cebba9fd00d392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd1f8a1a2b0e159b25cebba9fd00d392">setSettings</a> (const <a class="el" href="structDPS310_1_1Settings.html">Settings</a> &amp;settings)</td></tr>
-<tr class="memdesc:abd1f8a1a2b0e159b25cebba9fd00d392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the sensor settings.  <br /></td></tr>
+<tr class="memdesc:abd1f8a1a2b0e159b25cebba9fd00d392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the device settings.  <br /></td></tr>
 <tr class="separator:abd1f8a1a2b0e159b25cebba9fd00d392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad417af9cc751ac71feced8fe2ee44d3c" id="r_ad417af9cc751ac71feced8fe2ee44d3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad417af9cc751ac71feced8fe2ee44d3c">setup</a> (const <a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cf">Address</a> address=<a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cfa428429ba9ea83e4841036fb0508fd6dc">Address::PRIMARY</a>, const <a class="el" href="structDPS310_1_1Settings.html">Settings</a> &amp;settings=<a class="el" href="structDPS310_1_1Settings.html">Settings</a>(<a class="el" href="structDPS310_1_1Settings.html#a14d51839cd8f5e3c5debb99e2bc84fbea5b39c8b553c821e7cddc6da64b5bd2ee">Settings::Presets::DEFAULT</a>))</td></tr>
-<tr class="memdesc:ad417af9cc751ac71feced8fe2ee44d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.  <br /></td></tr>
+<tr class="memdesc:ad417af9cc751ac71feced8fe2ee44d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the device.  <br /></td></tr>
 <tr class="separator:ad417af9cc751ac71feced8fe2ee44d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae036cd8cc52196693bed3931678ef4cf" id="r_ae036cd8cc52196693bed3931678ef4cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae036cd8cc52196693bed3931678ef4cf">begin</a> ()</td></tr>
 <tr class="memdesc:ae036cd8cc52196693bed3931678ef4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin measurements.  <br /></td></tr>
 <tr class="separator:ae036cd8cc52196693bed3931678ef4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5f5da3261333ace96328912c1d9d2d4" id="r_aa5f5da3261333ace96328912c1d9d2d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f5da3261333ace96328912c1d9d2d4">update</a> ()</td></tr>
-<tr class="memdesc:aa5f5da3261333ace96328912c1d9d2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the sensor state.  <br /></td></tr>
+<tr class="memdesc:aa5f5da3261333ace96328912c1d9d2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device state.  <br /></td></tr>
 <tr class="separator:aa5f5da3261333ace96328912c1d9d2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf87c8cb23a4bccda02342718718345d" id="r_acf87c8cb23a4bccda02342718718345d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf87c8cb23a4bccda02342718718345d">end</a> ()</td></tr>
 <tr class="memdesc:acf87c8cb23a4bccda02342718718345d"><td class="mdescLeft">&#160;</td><td class="mdescRight">End measurements.  <br /></td></tr>
@@ -238,10 +238,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4385d0bfcfa6966e27e947f613642fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if data is available for reading.  <br /></td></tr>
 <tr class="separator:a4385d0bfcfa6966e27e947f613642fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba528c51d9399e935b701cc8d1afc5b" id="r_a9ba528c51d9399e935b701cc8d1afc5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ba528c51d9399e935b701cc8d1afc5b">onSleep</a> () const</td></tr>
-<tr class="memdesc:a9ba528c51d9399e935b701cc8d1afc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the sensor for sleep mode.  <br /></td></tr>
+<tr class="memdesc:a9ba528c51d9399e935b701cc8d1afc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the device for sleep mode.  <br /></td></tr>
 <tr class="separator:a9ba528c51d9399e935b701cc8d1afc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3176ac3e8093c6f0e7ed77e6ac74c646" id="r_a3176ac3e8093c6f0e7ed77e6ac74c646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3176ac3e8093c6f0e7ed77e6ac74c646">onWakeup</a> () const</td></tr>
-<tr class="memdesc:a3176ac3e8093c6f0e7ed77e6ac74c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wake the sensor from sleep mode.  <br /></td></tr>
+<tr class="memdesc:a3176ac3e8093c6f0e7ed77e6ac74c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wake the device from sleep mode.  <br /></td></tr>
 <tr class="separator:a3176ac3e8093c6f0e7ed77e6ac74c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53cb9578017d994e7839ac72ea7620d2" id="r_a53cb9578017d994e7839ac72ea7620d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53cb9578017d994e7839ac72ea7620d2">request</a> ()</td></tr>
 <tr class="memdesc:a53cb9578017d994e7839ac72ea7620d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request temperature and pressure measurement.  <br /></td></tr>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a70c0a133eb50496e720f96e560397f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate altitude based on measured pressure and sea-level pressure.  <br /></td></tr>
 <tr class="separator:a70c0a133eb50496e720f96e560397f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad006821b6671b1bc126acf82b1fe54bb" id="r_ad006821b6671b1bc126acf82b1fe54bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad006821b6671b1bc126acf82b1fe54bb">softReset</a> ()</td></tr>
-<tr class="memdesc:ad006821b6671b1bc126acf82b1fe54bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a software reset of the sensor.  <br /></td></tr>
+<tr class="memdesc:ad006821b6671b1bc126acf82b1fe54bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a software reset of the device.  <br /></td></tr>
 <tr class="separator:ad006821b6671b1bc126acf82b1fe54bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3c35624fee15451d62c7122959f86c" id="r_a0c3c35624fee15451d62c7122959f86c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c3c35624fee15451d62c7122959f86c">readId</a> ()</td></tr>
 <tr class="memdesc:a0c3c35624fee15451d62c7122959f86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the production and revision ID of the device.  <br /></td></tr>
@@ -302,7 +302,7 @@ Private Types</h2></td></tr>
 , <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35a1588118736b5ecdb1ac20c16428d8ea7">AVAILABLE</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae362155d2eb033c59bce94f6088cbe35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of internal states for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.  <a href="#ae362155d2eb033c59bce94f6088cbe35">More...</a><br /></td></tr>
+<tr class="memdesc:ae362155d2eb033c59bce94f6088cbe35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of internal states for the device.  <a href="#ae362155d2eb033c59bce94f6088cbe35">More...</a><br /></td></tr>
 <tr class="separator:ae362155d2eb033c59bce94f6088cbe35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78dff1806969c21299b20342d6b7823d" id="r_a78dff1806969c21299b20342d6b7823d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="#a78dff1806969c21299b20342d6b7823da0f43b2c009c02ceb56d6341a9616936b">PRS_B2</a> = 0x00
@@ -348,7 +348,7 @@ Private Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a78dff1806969c21299b20342d6b7823dad460cc789dd2feda0ab10617fda04b0d">COEF_SRCE</a> = 0x28
 <br />
  }</td></tr>
-<tr class="memdesc:a78dff1806969c21299b20342d6b7823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing I2C register addresses for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.  <a href="#a78dff1806969c21299b20342d6b7823d">More...</a><br /></td></tr>
+<tr class="memdesc:a78dff1806969c21299b20342d6b7823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing I2C register addresses for the device.  <a href="#a78dff1806969c21299b20342d6b7823d">More...</a><br /></td></tr>
 <tr class="separator:a78dff1806969c21299b20342d6b7823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e41bff8e19aa963a5a8bef55a22fea" id="r_ad3e41bff8e19aa963a5a8bef55a22fea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e41bff8e19aa963a5a8bef55a22fea">PRS_CFG</a> : uint8_t { <br />
 &#160;&#160;<b>PM_RATE2</b> = 6
@@ -433,12 +433,12 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ace70061f12ead9d69f2236ceaa9c3dc7" id="r_ace70061f12ead9d69f2236ceaa9c3dc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace70061f12ead9d69f2236ceaa9c3dc7">setAs</a> (const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a> state)</td></tr>
-<tr class="memdesc:ace70061f12ead9d69f2236ceaa9c3dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sensor to a specific state.  <br /></td></tr>
-<tr class="separator:ace70061f12ead9d69f2236ceaa9c3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd03e8c8d257e4f5c3ca385fdb7c81d1" id="r_acd03e8c8d257e4f5c3ca385fdb7c81d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd03e8c8d257e4f5c3ca385fdb7c81d1">isIn</a> (const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a> state)</td></tr>
-<tr class="memdesc:acd03e8c8d257e4f5c3ca385fdb7c81d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the sensor is in a specific state.  <br /></td></tr>
-<tr class="separator:acd03e8c8d257e4f5c3ca385fdb7c81d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca934c953dd801dbb94a9823149f122c" id="r_aca934c953dd801dbb94a9823149f122c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca934c953dd801dbb94a9823149f122c">set</a> (const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a> state)</td></tr>
+<tr class="memdesc:aca934c953dd801dbb94a9823149f122c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the device to a specific state.  <br /></td></tr>
+<tr class="separator:aca934c953dd801dbb94a9823149f122c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f12c4cbf609436eac82ce1da4e8f41" id="r_a27f12c4cbf609436eac82ce1da4e8f41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27f12c4cbf609436eac82ce1da4e8f41">in</a> (const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a> state)</td></tr>
+<tr class="memdesc:a27f12c4cbf609436eac82ce1da4e8f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the device is in a specific state.  <br /></td></tr>
+<tr class="separator:a27f12c4cbf609436eac82ce1da4e8f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f3b369a9952c6e72e0b443c8793c97" id="r_ae0f3b369a9952c6e72e0b443c8793c97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0f3b369a9952c6e72e0b443c8793c97">getError</a> () const</td></tr>
 <tr class="memdesc:ae0f3b369a9952c6e72e0b443c8793c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the latest error cause.  <br /></td></tr>
 <tr class="separator:ae0f3b369a9952c6e72e0b443c8793c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -463,12 +463,18 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9dbf32c9363aa5dca1548c7df591a259" id="r_a9dbf32c9363aa5dca1548c7df591a259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dbf32c9363aa5dca1548c7df591a259">updateCoefficients</a> ()</td></tr>
 <tr class="memdesc:a9dbf32c9363aa5dca1548c7df591a259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and update coefficient values.  <br /></td></tr>
 <tr class="separator:a9dbf32c9363aa5dca1548c7df591a259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240754385649213cb2bb2d145ff02bcd" id="r_a240754385649213cb2bb2d145ff02bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a240754385649213cb2bb2d145ff02bcd">readByte</a> (const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> reg, uint8_t *const dst)</td></tr>
-<tr class="memdesc:a240754385649213cb2bb2d145ff02bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a byte from the sensor.  <br /></td></tr>
-<tr class="separator:a240754385649213cb2bb2d145ff02bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3b0350f9150773bfac947a7a15ba04" id="r_a6c3b0350f9150773bfac947a7a15ba04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c3b0350f9150773bfac947a7a15ba04">writeByte</a> (const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> reg, const uint8_t src)</td></tr>
-<tr class="memdesc:a6c3b0350f9150773bfac947a7a15ba04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a byte to the sensor.  <br /></td></tr>
-<tr class="separator:a6c3b0350f9150773bfac947a7a15ba04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538a331a84d7eeda81d70d0645c665da" id="r_a538a331a84d7eeda81d70d0645c665da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a538a331a84d7eeda81d70d0645c665da">read</a> (const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> reg, uint8_t *const dst)</td></tr>
+<tr class="memdesc:a538a331a84d7eeda81d70d0645c665da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 8-bit data via I2C.  <br /></td></tr>
+<tr class="separator:a538a331a84d7eeda81d70d0645c665da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074b7866b06827e8b1c6054b44a57578" id="r_a074b7866b06827e8b1c6054b44a57578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074b7866b06827e8b1c6054b44a57578">read</a> (const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> reg, uint16_t *const dst)</td></tr>
+<tr class="memdesc:a074b7866b06827e8b1c6054b44a57578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 16-bit data via I2C.  <br /></td></tr>
+<tr class="separator:a074b7866b06827e8b1c6054b44a57578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26488f149077216c623f5ef631c466a7" id="r_a26488f149077216c623f5ef631c466a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26488f149077216c623f5ef631c466a7">write</a> (const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a> reg, const int src)</td></tr>
+<tr class="memdesc:a26488f149077216c623f5ef631c466a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 8-bit or 16-bit data via I2C.  <br /></td></tr>
+<tr class="separator:a26488f149077216c623f5ef631c466a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2b37f770bbf4a6842827d7c1ab9165" id="r_abd2b37f770bbf4a6842827d7c1ab9165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd2b37f770bbf4a6842827d7c1ab9165">setPattern</a> (uint16_t *target, int position, int value, int width)</td></tr>
+<tr class="memdesc:abd2b37f770bbf4a6842827d7c1ab9165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set multiple bits in the target word.  <br /></td></tr>
+<tr class="separator:abd2b37f770bbf4a6842827d7c1ab9165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -515,18 +521,27 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>use</
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>use</b> (const <a class="el" href="#a6928883b756aa06ecddad9e1fead7e13">COEF_SRCE</a> e)</td></tr>
 <tr class="memdesc:ae848609266fea0c82684c7eac3e6a1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to retrieve the integer value of a COEF_SRCE enum. <br /></td></tr>
 <tr class="separator:ae848609266fea0c82684c7eac3e6a1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1390f6acfae54d68b8481e2429f66ab0" id="r_a1390f6acfae54d68b8481e2429f66ab0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1390f6acfae54d68b8481e2429f66ab0">modifyByte</a> (uint8_t *const target, const int value_shift, const int value)</td></tr>
-<tr class="memdesc:a1390f6acfae54d68b8481e2429f66ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a single bit in the target byte.  <br /></td></tr>
-<tr class="separator:a1390f6acfae54d68b8481e2429f66ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d8d79bd5a37a7f01a0868596c113d2" id="r_a07d8d79bd5a37a7f01a0868596c113d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d8d79bd5a37a7f01a0868596c113d2">modifyByte</a> (uint8_t *const target, const int value_shift, const int value, const int value_bits)</td></tr>
-<tr class="memdesc:a07d8d79bd5a37a7f01a0868596c113d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify multiple bits in the target byte.  <br /></td></tr>
-<tr class="separator:a07d8d79bd5a37a7f01a0868596c113d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e66930129ae3aac335607883743a4f0" id="r_a0e66930129ae3aac335607883743a4f0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e66930129ae3aac335607883743a4f0">bitIsSet</a> (const uint8_t target, const int bit)</td></tr>
-<tr class="memdesc:a0e66930129ae3aac335607883743a4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a specific bit is set in a target byte.  <br /></td></tr>
-<tr class="separator:a0e66930129ae3aac335607883743a4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c252a7c40a3b6f0fa59b7b36b84bf12" id="r_a6c252a7c40a3b6f0fa59b7b36b84bf12"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c252a7c40a3b6f0fa59b7b36b84bf12">bitsAreSet</a> (const uint8_t target, const int shift, const int bits, const int width)</td></tr>
-<tr class="memdesc:a6c252a7c40a3b6f0fa59b7b36b84bf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if specific bits are set in a target byte.  <br /></td></tr>
-<tr class="separator:a6c252a7c40a3b6f0fa59b7b36b84bf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbaeb5c192219dc51173abccc9b8f5a" id="r_acbbaeb5c192219dc51173abccc9b8f5a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbbaeb5c192219dc51173abccc9b8f5a">setBit</a> (uint8_t *const target, const int position, const int value)</td></tr>
+<tr class="memdesc:acbbaeb5c192219dc51173abccc9b8f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single bit in the target byte.  <br /></td></tr>
+<tr class="separator:acbbaeb5c192219dc51173abccc9b8f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18efc77213c5028b1aa78094dee1233" id="r_aa18efc77213c5028b1aa78094dee1233"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa18efc77213c5028b1aa78094dee1233">setBit</a> (uint16_t *const target, const int position, const int value)</td></tr>
+<tr class="memdesc:aa18efc77213c5028b1aa78094dee1233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single bit in the target word.  <br /></td></tr>
+<tr class="separator:aa18efc77213c5028b1aa78094dee1233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9650bca4c4e52c100841f8f45498b65" id="r_ac9650bca4c4e52c100841f8f45498b65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9650bca4c4e52c100841f8f45498b65">setPattern</a> (uint8_t *const target, const int position, const int value, const int width)</td></tr>
+<tr class="memdesc:ac9650bca4c4e52c100841f8f45498b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set multiple bits in the target byte.  <br /></td></tr>
+<tr class="separator:ac9650bca4c4e52c100841f8f45498b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34d7014daa832b1290113b916af8790" id="r_ae34d7014daa832b1290113b916af8790"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae34d7014daa832b1290113b916af8790">hasBitSet</a> (const uint8_t target, const int bit)</td></tr>
+<tr class="memdesc:ae34d7014daa832b1290113b916af8790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a specific bit is set in a target byte.  <br /></td></tr>
+<tr class="separator:ae34d7014daa832b1290113b916af8790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051d71cc03cf8af39eb9b0f4b234508b" id="r_a051d71cc03cf8af39eb9b0f4b234508b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a051d71cc03cf8af39eb9b0f4b234508b">hasBitSet</a> (const uint16_t target, const int bit)</td></tr>
+<tr class="memdesc:a051d71cc03cf8af39eb9b0f4b234508b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a specific bit is set in a target word.  <br /></td></tr>
+<tr class="separator:a051d71cc03cf8af39eb9b0f4b234508b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb20c1be073e7eb3a638b93e8095f04" id="r_a2eb20c1be073e7eb3a638b93e8095f04"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eb20c1be073e7eb3a638b93e8095f04">hasPattern</a> (const uint8_t target, const int shift, const int bits, const int width)</td></tr>
+<tr class="memdesc:a2eb20c1be073e7eb3a638b93e8095f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if specific bits are set in a target byte.  <br /></td></tr>
+<tr class="separator:a2eb20c1be073e7eb3a638b93e8095f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af750b31d3ecfd69949329f411fb6147a" id="r_af750b31d3ecfd69949329f411fb6147a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af750b31d3ecfd69949329f411fb6147a">hasPattern</a> (const uint16_t target, const int shift, const int bits, const int width)</td></tr>
+<tr class="memdesc:af750b31d3ecfd69949329f411fb6147a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if specific bits are set in a target word.  <br /></td></tr>
+<tr class="separator:af750b31d3ecfd69949329f411fb6147a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268d39048c1efe6b5a4d5a25c45542b0" id="r_a268d39048c1efe6b5a4d5a25c45542b0"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a268d39048c1efe6b5a4d5a25c45542b0">twosComplement</a> (int32_t raw_value, const int bit_length)</td></tr>
 <tr class="memdesc:a268d39048c1efe6b5a4d5a25c45542b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the two's complement of a value.  <br /></td></tr>
 <tr class="separator:a268d39048c1efe6b5a4d5a25c45542b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -535,7 +550,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>use</
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae7863e53fc20abd2090fc52624683c3e" id="r_ae7863e53fc20abd2090fc52624683c3e"><td class="memItemLeft" align="right" valign="top"><a id="ae7863e53fc20abd2090fc52624683c3e" name="ae7863e53fc20abd2090fc52624683c3e"></a>
 <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b></td></tr>
-<tr class="memdesc:ae7863e53fc20abd2090fc52624683c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the sensor. <br /></td></tr>
+<tr class="memdesc:ae7863e53fc20abd2090fc52624683c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the device. <br /></td></tr>
 <tr class="separator:ae7863e53fc20abd2090fc52624683c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98028514db5cf5f91aa5f7c7934464e7" id="r_a98028514db5cf5f91aa5f7c7934464e7"><td class="memItemLeft" align="right" valign="top"><a id="a98028514db5cf5f91aa5f7c7934464e7" name="a98028514db5cf5f91aa5f7c7934464e7"></a>
 <a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_error</b></td></tr>
@@ -547,76 +562,76 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>_error_message</b> [4
 <tr class="separator:abe8a6b0703ad7ce32559068b5544854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a8a9449c0eb0ab87a7a35e959ec410" id="r_ac1a8a9449c0eb0ab87a7a35e959ec410"><td class="memItemLeft" align="right" valign="top"><a id="ac1a8a9449c0eb0ab87a7a35e959ec410" name="ac1a8a9449c0eb0ab87a7a35e959ec410"></a>
 <a class="el" href="#acc63231a5aeb9fa897fe8a8f6734f6cf">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_address</b></td></tr>
-<tr class="memdesc:ac1a8a9449c0eb0ab87a7a35e959ec410"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C address of the sensor. <br /></td></tr>
+<tr class="memdesc:ac1a8a9449c0eb0ab87a7a35e959ec410"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C address of the device. <br /></td></tr>
 <tr class="separator:ac1a8a9449c0eb0ab87a7a35e959ec410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f2624d9a223f6bda297ebb008ef97c" id="r_a93f2624d9a223f6bda297ebb008ef97c"><td class="memItemLeft" align="right" valign="top"><a id="a93f2624d9a223f6bda297ebb008ef97c" name="a93f2624d9a223f6bda297ebb008ef97c"></a>
 <a class="el" href="structDPS310_1_1Settings.html">Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_settings</b></td></tr>
-<tr class="memdesc:a93f2624d9a223f6bda297ebb008ef97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration settings for the sensor. <br /></td></tr>
+<tr class="memdesc:a93f2624d9a223f6bda297ebb008ef97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration settings for the device. <br /></td></tr>
 <tr class="separator:a93f2624d9a223f6bda297ebb008ef97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db1dc93583c1f9f4c22d61b20907577" id="r_a1db1dc93583c1f9f4c22d61b20907577"><td class="memItemLeft" align="right" valign="top"><a id="a1db1dc93583c1f9f4c22d61b20907577" name="a1db1dc93583c1f9f4c22d61b20907577"></a>
 <a class="el" href="#aeed88f815a7ec27b9b323778089ddf5d">OperationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_operation_mode</b></td></tr>
 <tr class="memdesc:a1db1dc93583c1f9f4c22d61b20907577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current operational mode. <br /></td></tr>
 <tr class="separator:a1db1dc93583c1f9f4c22d61b20907577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8428fede6f7e5369fb5396d9c2087cd6" id="r_a8428fede6f7e5369fb5396d9c2087cd6"><td class="memItemLeft" ><a id="a8428fede6f7e5369fb5396d9c2087cd6" name="a8428fede6f7e5369fb5396d9c2087cd6"></a>
+<tr class="memitem:af23a7c9c3d48a283b70566dcc066c7b8" id="r_af23a7c9c3d48a283b70566dcc066c7b8"><td class="memItemLeft" ><a id="af23a7c9c3d48a283b70566dcc066c7b8" name="af23a7c9c3d48a283b70566dcc066c7b8"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8930f1be7e0beb060e762b30818cbc56" id="r_a8930f1be7e0beb060e762b30818cbc56"><td class="memItemLeft" >
+<tr class="memitem:a4b0eb58883736c01db2827f4787bbf20" id="r_a4b0eb58883736c01db2827f4787bbf20"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c0</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a8930f1be7e0beb060e762b30818cbc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a038f33e662d919454fec91b33835aa13" id="r_a038f33e662d919454fec91b33835aa13"><td class="memItemLeft" >
+<tr class="separator:a4b0eb58883736c01db2827f4787bbf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e2cd42e02926bf77b568fa6c3324cd" id="r_ad7e2cd42e02926bf77b568fa6c3324cd"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c1</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a038f33e662d919454fec91b33835aa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6352502335c0a84853dc6689cb82fb5" id="r_ae6352502335c0a84853dc6689cb82fb5"><td class="memItemLeft" >
+<tr class="separator:ad7e2cd42e02926bf77b568fa6c3324cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa437a06c32d034d5b2526c123725e294" id="r_aa437a06c32d034d5b2526c123725e294"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c00</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ae6352502335c0a84853dc6689cb82fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43aa658faaf75c29d3cd906dcf23abb2" id="r_a43aa658faaf75c29d3cd906dcf23abb2"><td class="memItemLeft" >
+<tr class="separator:aa437a06c32d034d5b2526c123725e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae081225d7b687362b9b4bf4d18c5819" id="r_aae081225d7b687362b9b4bf4d18c5819"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c10</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a43aa658faaf75c29d3cd906dcf23abb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc95aa3b941d0e059e2da3a1627f365f" id="r_acc95aa3b941d0e059e2da3a1627f365f"><td class="memItemLeft" >
+<tr class="separator:aae081225d7b687362b9b4bf4d18c5819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea6b784eb87871b42a0b8503e0b8536" id="r_aeea6b784eb87871b42a0b8503e0b8536"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c01</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:acc95aa3b941d0e059e2da3a1627f365f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f5da679e8ad110822228100dc1a729" id="r_a74f5da679e8ad110822228100dc1a729"><td class="memItemLeft" >
+<tr class="separator:aeea6b784eb87871b42a0b8503e0b8536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c55f28b50c378aca2e66a7de386323" id="r_aa2c55f28b50c378aca2e66a7de386323"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c11</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a74f5da679e8ad110822228100dc1a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdfa78e1960695f5154a8241560b676" id="r_a2fdfa78e1960695f5154a8241560b676"><td class="memItemLeft" >
+<tr class="separator:aa2c55f28b50c378aca2e66a7de386323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50063ca3b1f56f1194e83453f447ee13" id="r_a50063ca3b1f56f1194e83453f447ee13"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c20</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2fdfa78e1960695f5154a8241560b676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03bc1d791c2601520fa052fce19ef23f" id="r_a03bc1d791c2601520fa052fce19ef23f"><td class="memItemLeft" >
+<tr class="separator:a50063ca3b1f56f1194e83453f447ee13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154210c1a32da6117d54f59713b67fda" id="r_a154210c1a32da6117d54f59713b67fda"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c21</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a03bc1d791c2601520fa052fce19ef23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3195a83b781b142d4d2f03303d7940c" id="r_ac3195a83b781b142d4d2f03303d7940c"><td class="memItemLeft" >
+<tr class="separator:a154210c1a32da6117d54f59713b67fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3b2ffe349ca9528cbda39ddef03800" id="r_a5e3b2ffe349ca9528cbda39ddef03800"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>c30</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ac3195a83b781b142d4d2f03303d7940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8428fede6f7e5369fb5396d9c2087cd6" id="r_a8428fede6f7e5369fb5396d9c2087cd6"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>_coef</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a8428fede6f7e5369fb5396d9c2087cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibration coefficients used for compensation. <br /></td></tr>
-<tr class="separator:a8428fede6f7e5369fb5396d9c2087cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0354554fa7e99494731abe1b692140" id="r_a6e0354554fa7e99494731abe1b692140"><td class="memItemLeft" ><a id="a6e0354554fa7e99494731abe1b692140" name="a6e0354554fa7e99494731abe1b692140"></a>
+<tr class="separator:a5e3b2ffe349ca9528cbda39ddef03800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23a7c9c3d48a283b70566dcc066c7b8" id="r_af23a7c9c3d48a283b70566dcc066c7b8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>_coef</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:af23a7c9c3d48a283b70566dcc066c7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibration coefficients used for compensation. <br /></td></tr>
+<tr class="separator:af23a7c9c3d48a283b70566dcc066c7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc7c4d9bb1ce501e860f5fc1e77ab76" id="r_a7cc7c4d9bb1ce501e860f5fc1e77ab76"><td class="memItemLeft" ><a id="a7cc7c4d9bb1ce501e860f5fc1e77ab76" name="a7cc7c4d9bb1ce501e860f5fc1e77ab76"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3828ec239dfa6b8f30084d7bd93234d7" id="r_a3828ec239dfa6b8f30084d7bd93234d7"><td class="memItemLeft" >
+<tr class="memitem:a8a822cb6fed1fd5fd11e898fcc47c030" id="r_a8a822cb6fed1fd5fd11e898fcc47c030"><td class="memItemLeft" >
 &#160;&#160;&#160;float&#160;&#160;&#160;<b>t_raw_scaled</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a3828ec239dfa6b8f30084d7bd93234d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaled raw temperature data. <br /></td></tr>
-<tr class="separator:a3828ec239dfa6b8f30084d7bd93234d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7092981b9faa648bf866b32c1f65e8" id="r_aab7092981b9faa648bf866b32c1f65e8"><td class="memItemLeft" >
+<tr class="memdesc:a8a822cb6fed1fd5fd11e898fcc47c030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaled raw temperature data. <br /></td></tr>
+<tr class="separator:a8a822cb6fed1fd5fd11e898fcc47c030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391643d66dbfa7ce0d011303901c3035" id="r_a391643d66dbfa7ce0d011303901c3035"><td class="memItemLeft" >
 &#160;&#160;&#160;float&#160;&#160;&#160;<b>temperature</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:aab7092981b9faa648bf866b32c1f65e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest temperature in °C. <br /></td></tr>
-<tr class="separator:aab7092981b9faa648bf866b32c1f65e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9209bd714f20ca5d2ec76580d984e3dc" id="r_a9209bd714f20ca5d2ec76580d984e3dc"><td class="memItemLeft" >
+<tr class="memdesc:a391643d66dbfa7ce0d011303901c3035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest temperature in °C. <br /></td></tr>
+<tr class="separator:a391643d66dbfa7ce0d011303901c3035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad984a1be740d6c7a8f41e9f16272c44a" id="r_ad984a1be740d6c7a8f41e9f16272c44a"><td class="memItemLeft" >
 &#160;&#160;&#160;float&#160;&#160;&#160;<b>p_raw_scaled</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a9209bd714f20ca5d2ec76580d984e3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaled raw pressure data. <br /></td></tr>
-<tr class="separator:a9209bd714f20ca5d2ec76580d984e3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a41d217689b5ef45b1ef648ba67ed1d" id="r_a0a41d217689b5ef45b1ef648ba67ed1d"><td class="memItemLeft" >
+<tr class="memdesc:ad984a1be740d6c7a8f41e9f16272c44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scaled raw pressure data. <br /></td></tr>
+<tr class="separator:ad984a1be740d6c7a8f41e9f16272c44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b56d1d54d3719f1c5e4d404ce8f0a84" id="r_a8b56d1d54d3719f1c5e4d404ce8f0a84"><td class="memItemLeft" >
 &#160;&#160;&#160;float&#160;&#160;&#160;<b>pressure</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a0a41d217689b5ef45b1ef648ba67ed1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest pressure in hPa. <br /></td></tr>
-<tr class="separator:a0a41d217689b5ef45b1ef648ba67ed1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0354554fa7e99494731abe1b692140" id="r_a6e0354554fa7e99494731abe1b692140"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>_values</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a6e0354554fa7e99494731abe1b692140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest measured values. <br /></td></tr>
-<tr class="separator:a6e0354554fa7e99494731abe1b692140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8b56d1d54d3719f1c5e4d404ce8f0a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest pressure in hPa. <br /></td></tr>
+<tr class="separator:a8b56d1d54d3719f1c5e4d404ce8f0a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc7c4d9bb1ce501e860f5fc1e77ab76" id="r_a7cc7c4d9bb1ce501e860f5fc1e77ab76"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>_values</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a7cc7c4d9bb1ce501e860f5fc1e77ab76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latest measured values. <br /></td></tr>
+<tr class="separator:a7cc7c4d9bb1ce501e860f5fc1e77ab76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a7d381bde1cd999c447127b16d7cf8a05" id="r_a7d381bde1cd999c447127b16d7cf8a05"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d381bde1cd999c447127b16d7cf8a05">GENUINE_PRODUCT_ID</a> = 0x10</td></tr>
-<tr class="memdesc:a7d381bde1cd999c447127b16d7cf8a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genuine product ID for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.  <br /></td></tr>
+<tr class="memdesc:a7d381bde1cd999c447127b16d7cf8a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genuine product ID for the device.  <br /></td></tr>
 <tr class="separator:a7d381bde1cd999c447127b16d7cf8a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -632,10 +647,10 @@ Friends</h2></td></tr>
 <tr class="separator:aa3db8e908e964e0a38443d6d9f3ee79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file dependency for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor communication. </p>
-<p>Includes the MWX library, which provides the necessary interfaces for communication and data handling with the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
-<p>Interface for the Infineon <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> barometric pressure sensor.</p>
-<p>Provides configuration, measurement, and calibration functions for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a>, enabling temperature and pressure sensing with customizable sampling rates, precision, and operating modes. </p>
+<div class="textblock"><p>Header file dependency. </p>
+<p>Includes the MWX library, which provides the necessary interfaces for communication.</p>
+<p>Interface for the device.</p>
+<p>Provides configuration, measurement, and calibration functions for the device. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="acc63231a5aeb9fa897fe8a8f6734f6cf" name="acc63231a5aeb9fa897fe8a8f6734f6cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc63231a5aeb9fa897fe8a8f6734f6cf">&#9670;&#160;</a></span>Address</h2>
@@ -657,8 +672,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enum class defining possible I2C addresses for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a>. </p>
-<p>The <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor can be addressed via two possible I2C addresses:</p><ul>
+<p>Enum class defining possible I2C addresses for the device. </p>
+<p>The <a class="el" href="classDPS310.html" title="Header file dependency.">DPS310</a> device can be addressed via two possible I2C addresses:</p><ul>
 <li>PRIMARY: 0x77 (default)</li>
 <li>SECONDARY: 0x76 (alternative) </li>
 </ul>
@@ -871,8 +886,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enum class for available operating modes of <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a>. </p>
-<p>Defines the modes in which the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor can operate, allowing for control over one-shot and continuous measurement modes. </p>
+<p>Enum class for available operating modes of the device. </p>
+<p>Defines the modes in which the device can operate, allowing for control over one-shot and continuous measurement modes. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeed88f815a7ec27b9b323778089ddf5daeea559d5c56d48e94e586f7fe000c0b1" name="aeed88f815a7ec27b9b323778089ddf5daeea559d5c56d48e94e586f7fe000c0b1"></a>STANDBY&#160;</td><td class="fielddoc"><p>Standby mode (no measurements) </p>
 </td></tr>
@@ -978,8 +993,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enum class representing I2C register addresses for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. </p>
-<p>This enumeration defines all the register addresses used for configuring and operating the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. Registers include those for reading raw data, configuring sampling rates and precision, managing interrupts, and storing calibration coefficients.</p>
+<p>Enum class representing I2C register addresses for the device. </p>
+<p>This enumeration defines all the register addresses used for configuring and operating the device. Registers include those for reading raw data, configuring sampling rates and precision, managing interrupts, and storing calibration coefficients.</p>
 <p>Key Register Groups:</p><ul>
 <li><b>Pressure and Temperature Data</b>: PRS_B2, PRS_B1, PRS_B0, TMP_B2, TMP_B1, TMP_B0.</li>
 <li><b>Configuration</b>: PRS_CFG, TMP_CFG, MEAS_CFG, CFG_REG.</li>
@@ -1115,14 +1130,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enum class for operation results of <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> methods. </p>
-<p>Represents the status of operations performed by <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> methods. Used to indicate success or specific failure reasons. </p>
+<p>Enum class for operation results of the device methods. </p>
+<p>Represents the status of operations performed by the device methods. Used to indicate success or specific failure reasons. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" name="a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>Operation completed successfully. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4a611dfec8aa31b736056d9cb3ab500d4d" name="a74fde4e100a50ee4db0baf53a140a5f4a611dfec8aa31b736056d9cb3ab500d4d"></a>FAILED_NOT_RESPONDING&#160;</td><td class="fielddoc"><p>Sensor is not responding. </p>
+<tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4a611dfec8aa31b736056d9cb3ab500d4d" name="a74fde4e100a50ee4db0baf53a140a5f4a611dfec8aa31b736056d9cb3ab500d4d"></a>FAILED_NOT_RESPONDING&#160;</td><td class="fielddoc"><p>Device is not responding. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4ae0527df587760b73196c4ded483ff7ef" name="a74fde4e100a50ee4db0baf53a140a5f4ae0527df587760b73196c4ded483ff7ef"></a>FAILED_BUSY&#160;</td><td class="fielddoc"><p>Sensor is busy with another operation. </p>
+<tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4ae0527df587760b73196c4ded483ff7ef" name="a74fde4e100a50ee4db0baf53a140a5f4ae0527df587760b73196c4ded483ff7ef"></a>FAILED_BUSY&#160;</td><td class="fielddoc"><p>Device is busy with another operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e" name="a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e"></a>FAILED_UNKNOWN&#160;</td><td class="fielddoc"><p>An unknown error occurred. </p>
 </td></tr>
@@ -1150,8 +1165,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enum class for available sampling rates for <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> measurements. </p>
-<p>Defines the frequency at which the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> can perform measurements. Higher sampling rates increase measurement frequency but may increase power consumption. </p>
+<p>Enum class for available sampling rates for the device measurements. </p>
+<p>Defines the frequency at which the device can perform measurements. Higher sampling rates increase measurement frequency but may increase power consumption. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4c2fc3581d359a772938d97f21052d8ea555463de129a926107fc9e7562d03705" name="a4c2fc3581d359a772938d97f21052d8ea555463de129a926107fc9e7562d03705"></a>SAMPLING_1HZ&#160;</td><td class="fielddoc"><p>1 measurement per second (1 Hz) </p>
 </td></tr>
@@ -1193,26 +1208,26 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enumeration of internal states for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. </p>
-<p>Represents the various operational and transitional states of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor during its lifecycle. These states are used internally to manage sensor behavior, ensuring proper sequencing for measurement and data retrieval.</p>
+<p>Enumeration of internal states for the device. </p>
+<p>Represents the various operational and transitional states of the device during its lifecycle. These states are used internally to manage device behavior, ensuring proper sequencing for measurement and data retrieval.</p>
 <p>States:</p><ul>
 <li><code>WAIT_SETUP</code>: Waiting for initial setup to complete.</li>
-<li><code>WAIT_BEGIN</code>: Waiting for the sensor to begin operation.</li>
-<li><code>IDLE</code>: Sensor is idle and ready for a new measurement.</li>
+<li><code>WAIT_BEGIN</code>: Waiting for the device to begin operation.</li>
+<li><code>IDLE</code>: Device is idle and ready for a new measurement.</li>
 <li><code>TEMP_BUSY</code>: A temperature measurement is in progress.</li>
 <li><code>TEMP_COMPLETE</code>: Temperature measurement completed successfully.</li>
 <li><code>TEMP_ERROR</code>: An error occurred during temperature measurement.</li>
 <li><code>PRES_BUSY</code>: A pressure measurement is in progress.</li>
 <li><code>PRES_COMPLETE</code>: Pressure measurement completed successfully.</li>
 <li><code>PRES_ERROR</code>: An error occurred during pressure measurement.</li>
-<li><code>AVAILABLE</code>: Sensor data is ready to be read. </li>
+<li><code>AVAILABLE</code>: Data is ready to be read. </li>
 </ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae362155d2eb033c59bce94f6088cbe35a126ddbe13cc2a70fad5799aaeb509c13" name="ae362155d2eb033c59bce94f6088cbe35a126ddbe13cc2a70fad5799aaeb509c13"></a>WAIT_SETUP&#160;</td><td class="fielddoc"><p>Waiting for setup to complete. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae362155d2eb033c59bce94f6088cbe35a644bc4f59bfee61861265888d0bbf395" name="ae362155d2eb033c59bce94f6088cbe35a644bc4f59bfee61861265888d0bbf395"></a>WAIT_BEGIN&#160;</td><td class="fielddoc"><p>Waiting to begin operation. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae362155d2eb033c59bce94f6088cbe35aa5daf7f2ebbba4975d61dab1c40188c7" name="ae362155d2eb033c59bce94f6088cbe35aa5daf7f2ebbba4975d61dab1c40188c7"></a>IDLE&#160;</td><td class="fielddoc"><p>Sensor is idle and ready for a new measurement. </p>
+<tr><td class="fieldname"><a id="ae362155d2eb033c59bce94f6088cbe35aa5daf7f2ebbba4975d61dab1c40188c7" name="ae362155d2eb033c59bce94f6088cbe35aa5daf7f2ebbba4975d61dab1c40188c7"></a>IDLE&#160;</td><td class="fielddoc"><p>Device is idle and ready for a new measurement. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae362155d2eb033c59bce94f6088cbe35a9689e7b35a70148d365bf82f80793010" name="ae362155d2eb033c59bce94f6088cbe35a9689e7b35a70148d365bf82f80793010"></a>TEMP_BUSY&#160;</td><td class="fielddoc"><p>Temperature measurement in progress. </p>
 </td></tr>
@@ -1333,8 +1348,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> class. </p>
-<p>Initializes the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor object with default settings, state, and error status. </p>
+<p>Constructor for the device interface. </p>
+<p>Initializes the device object with default settings, state, and error status. </p>
 
 </div>
 </div>
@@ -1361,7 +1376,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Destructor for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> class. </p>
+<p>Destructor for the device interface. </p>
 <p>Cleans up any resources or states before the object is destroyed. </p>
 
 </div>
@@ -1391,14 +1406,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Apply the given operation mode. </p>
-<p>Configures the sensor to operate in the specified mode.</p>
+<p>Configures the device to operate in the specified mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>The <code>OperationMode</code> to apply. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
 
 </div>
 </div>
@@ -1426,8 +1441,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Apply saved pressure configurations from settings. </p>
-<p>Updates the sensor's pressure measurement settings based on the current configuration stored in the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for DPS310 sensor measurements.">Settings</a></code> structure.</p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
+<p>Updates the device's pressure measurement settings based on the current configuration stored in the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for the device measurements.">Settings</a></code> structure.</p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
 
 </div>
 </div>
@@ -1455,8 +1470,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Apply saved temperature configurations from settings. </p>
-<p>Updates the sensor's temperature measurement settings based on the current configuration stored in the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for DPS310 sensor measurements.">Settings</a></code> structure.</p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
+<p>Updates the device's temperature measurement settings based on the current configuration stored in the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for the device measurements.">Settings</a></code> structure.</p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
 
 </div>
 </div>
@@ -1484,7 +1499,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if data is available for reading. </p>
-<p>Determines if the sensor has completed measurements and the data is ready for retrieval.</p>
+<p>Determines if the device has completed measurements and the data is ready for retrieval.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if data is available; otherwise, <code>false</code>. </dd></dl>
 
 </div>
@@ -1505,99 +1520,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin measurements. </p>
-<p>Initializes the sensor and prepares it for operation, starting measurement processes. </p>
-
-</div>
-</div>
-<a id="a0e66930129ae3aac335607883743a4f0" name="a0e66930129ae3aac335607883743a4f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e66930129ae3aac335607883743a4f0">&#9670;&#160;</a></span>bitIsSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool DPS310::bitIsSet </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if a specific bit is set in a target byte. </p>
-<p>Determines whether the specified bit in the target byte is set.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>The byte to check. </td></tr>
-    <tr><td class="paramname">bit</td><td>The bit position to check (from LSB). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the specified bit is set; otherwise, <code>false</code>. </dd></dl>
-
-</div>
-</div>
-<a id="a6c252a7c40a3b6f0fa59b7b36b84bf12" name="a6c252a7c40a3b6f0fa59b7b36b84bf12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c252a7c40a3b6f0fa59b7b36b84bf12">&#9670;&#160;</a></span>bitsAreSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool DPS310::bitsAreSet </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>shift</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bits</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if specific bits are set in a target byte. </p>
-<p>Determines whether a specific bit pattern is present in the target byte, starting at a given position and spanning the specified width.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>The byte to check. </td></tr>
-    <tr><td class="paramname">shift</td><td>Starting bit position to check (from LSB). </td></tr>
-    <tr><td class="paramname">bits</td><td>The bit pattern to verify (e.g., 0b101). </td></tr>
-    <tr><td class="paramname">width</td><td>Width of the bit pattern (in bits). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the bit pattern is set; otherwise, <code>false</code>. </dd></dl>
+<p>Initializes the device and prepares it for operation, starting measurement processes. </p>
 
 </div>
 </div>
@@ -1652,7 +1575,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>End measurements. </p>
-<p>Stops the measurement processes and powers down the sensor. </p>
+<p>Stops the measurement processes and powers down the device. </p>
 
 </div>
 </div>
@@ -1679,8 +1602,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the I2C address of the sensor. </p>
-<p>Provides the currently configured I2C address of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
+<p>Retrieves the I2C address of the device. </p>
+<p>Provides the currently configured I2C address of the device.</p>
 <dl class="section return"><dt>Returns</dt><dd>The <code>Address</code> enum representing the I2C address. </dd></dl>
 
 </div>
@@ -1709,8 +1632,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the latest error cause. </p>
-<p>Provides the most recent error encountered during the operation of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the error cause. </dd></dl>
+<p>Provides the most recent error encountered during the operation of the device.</p>
+<dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the error cause. </dd></dl>
 
 </div>
 </div>
@@ -1738,7 +1661,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the latest error message. </p>
-<p>Provides the most recent error message encountered during the operation of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
+<p>Provides the most recent error message encountered during the operation of the device.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the character array containing the error message. </dd></dl>
 
 </div>
@@ -1811,8 +1734,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the current operation mode. </p>
-<p>Provides the current operating mode of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="#aeed88f815a7ec27b9b323778089ddf5d" title="Enum class for available operating modes of DPS310.">DPS310::OperationMode</a></code> representing the current mode. </dd></dl>
+<p>Provides the current operating mode of the device.</p>
+<dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="#aeed88f815a7ec27b9b323778089ddf5d" title="Enum class for available operating modes of the device.">DPS310::OperationMode</a></code> representing the current mode. </dd></dl>
 
 </div>
 </div>
@@ -1883,14 +1806,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the current sensor settings. </p>
-<p>Provides access to the current temperature and pressure settings configured for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for DPS310 sensor measurements.">Settings</a></code> structure containing the configuration. </dd></dl>
+<p>Retrieves the current device settings. </p>
+<p>Provides access to the current temperature and pressure settings configured for the device.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for the device measurements.">Settings</a></code> structure containing the configuration. </dd></dl>
 
 </div>
 </div>
-<a id="acd03e8c8d257e4f5c3ca385fdb7c81d1" name="acd03e8c8d257e4f5c3ca385fdb7c81d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd03e8c8d257e4f5c3ca385fdb7c81d1">&#9670;&#160;</a></span>isIn()</h2>
+<a id="a051d71cc03cf8af39eb9b0f4b234508b" name="a051d71cc03cf8af39eb9b0f4b234508b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051d71cc03cf8af39eb9b0f4b234508b">&#9670;&#160;</a></span>hasBitSet() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1899,7 +1822,191 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool DPS310::isIn </td>
+          <td class="memname">static bool DPS310::hasBitSet </td>
+          <td>(</td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a specific bit is set in a target word. </p>
+<p>Determines whether the specified bit in the target word is set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The word to check. </td></tr>
+    <tr><td class="paramname">bit</td><td>The bit position to check (from LSB). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the specified bit is set; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ae34d7014daa832b1290113b916af8790" name="ae34d7014daa832b1290113b916af8790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34d7014daa832b1290113b916af8790">&#9670;&#160;</a></span>hasBitSet() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool DPS310::hasBitSet </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a specific bit is set in a target byte. </p>
+<p>Determines whether the specified bit in the target byte is set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The byte to check. </td></tr>
+    <tr><td class="paramname">bit</td><td>The bit position to check (from LSB). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the specified bit is set; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="af750b31d3ecfd69949329f411fb6147a" name="af750b31d3ecfd69949329f411fb6147a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af750b31d3ecfd69949329f411fb6147a">&#9670;&#160;</a></span>hasPattern() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool DPS310::hasPattern </td>
+          <td>(</td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>shift</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bits</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if specific bits are set in a target word. </p>
+<p>Determines whether a specific bit pattern is present in the target word, starting at a given position and spanning the specified width.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The word to check. </td></tr>
+    <tr><td class="paramname">shift</td><td>Starting bit position to check (from LSB). </td></tr>
+    <tr><td class="paramname">bits</td><td>The bit pattern to verify (e.g., 0b101). </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the bit pattern (in bits). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the bit pattern is set; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a2eb20c1be073e7eb3a638b93e8095f04" name="a2eb20c1be073e7eb3a638b93e8095f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb20c1be073e7eb3a638b93e8095f04">&#9670;&#160;</a></span>hasPattern() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool DPS310::hasPattern </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>shift</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>bits</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if specific bits are set in a target byte. </p>
+<p>Determines whether a specific bit pattern is present in the target byte, starting at a given position and spanning the specified width.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The byte to check. </td></tr>
+    <tr><td class="paramname">shift</td><td>Starting bit position to check (from LSB). </td></tr>
+    <tr><td class="paramname">bits</td><td>The bit pattern to verify (e.g., 0b101). </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the bit pattern (in bits). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the bit pattern is set; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a27f12c4cbf609436eac82ce1da4e8f41" name="a27f12c4cbf609436eac82ce1da4e8f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f12c4cbf609436eac82ce1da4e8f41">&#9670;&#160;</a></span>in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPS310::in </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -1912,110 +2019,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the sensor is in a specific state. </p>
+<p>Checks if the device is in a specific state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>The state to check against. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the sensor is in the specified state; <code>false</code> otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a1390f6acfae54d68b8481e2429f66ab0" name="a1390f6acfae54d68b8481e2429f66ab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1390f6acfae54d68b8481e2429f66ab0">&#9670;&#160;</a></span>modifyByte() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DPS310::modifyByte </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value_shift</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Modify a single bit in the target byte. </p>
-<p>Changes the value of a specific bit in the target byte to the given value (0 or 1).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>Pointer to the byte to modify. </td></tr>
-    <tr><td class="paramname">value_shift</td><td>Bit position to modify (from LSB). </td></tr>
-    <tr><td class="paramname">value</td><td>New value for the bit (0 or 1). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a07d8d79bd5a37a7f01a0868596c113d2" name="a07d8d79bd5a37a7f01a0868596c113d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07d8d79bd5a37a7f01a0868596c113d2">&#9670;&#160;</a></span>modifyByte() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DPS310::modifyByte </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value_shift</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value_bits</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Modify multiple bits in the target byte. </p>
-<p>Updates a range of bits in the target byte with the specified value, starting at the given bit position and spanning the specified width.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>Pointer to the byte to modify. </td></tr>
-    <tr><td class="paramname">value_shift</td><td>Starting bit position to modify (from LSB). </td></tr>
-    <tr><td class="paramname">value</td><td>The new value to write into the bit range (e.g., 0b101). </td></tr>
-    <tr><td class="paramname">value_bits</td><td>Width of the bit range to modify (in bits). </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the device is in the specified state; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2042,8 +2053,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Prepare the sensor for sleep mode. </p>
-<p>Performs any necessary steps to put the sensor into a low-power state. </p>
+<p>Prepare the device for sleep mode. </p>
+<p>Performs any necessary steps to put the device into a low-power state. </p>
 
 </div>
 </div>
@@ -2070,13 +2081,93 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Wake the sensor from sleep mode. </p>
-<p>Restores the sensor from a low-power state, preparing it for operation. </p>
+<p>Wake the device from sleep mode. </p>
+<p>Restores the device from a low-power state, preparing it for operation. </p>
+
+</div>
+</div>
+<a id="a074b7866b06827e8b1c6054b44a57578" name="a074b7866b06827e8b1c6054b44a57578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074b7866b06827e8b1c6054b44a57578">&#9670;&#160;</a></span>read() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">DPS310::Result</a> DPS310::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a></td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *const</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read 16-bit data via I2C. </p>
+<p>Reads 2 bytes of data from the specified register address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Register address to read from. </td></tr>
+    <tr><td class="paramname">dst</td><td>Pointer to the variable where the read data will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating success or failure of the read operation. </dd></dl>
+
+</div>
+</div>
+<a id="a538a331a84d7eeda81d70d0645c665da" name="a538a331a84d7eeda81d70d0645c665da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538a331a84d7eeda81d70d0645c665da">&#9670;&#160;</a></span>read() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">DPS310::Result</a> DPS310::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a></td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read 8-bit data via I2C. </p>
+<p>Reads a single byte of data from the specified register address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Register address to read from. </td></tr>
+    <tr><td class="paramname">dst</td><td>Pointer to the variable where the read data will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating success or failure of the read operation. </dd></dl>
 
 </div>
 </div>
 <a id="aeded9fb3426e08dda07d9d97e1eb6624" name="aeded9fb3426e08dda07d9d97e1eb6624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeded9fb3426e08dda07d9d97e1eb6624">&#9670;&#160;</a></span>read()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeded9fb3426e08dda07d9d97e1eb6624">&#9670;&#160;</a></span>read() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2095,7 +2186,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read temperature and pressure data after a measurement request. </p>
-<p>Retrieves the temperature and pressure data measured by the sensor. Ensure <code><a class="el" href="#a53cb9578017d994e7839ac72ea7620d2" title="Request temperature and pressure measurement.">request()</a></code> has been called before using this method.</p>
+<p>Retrieves the temperature and pressure data measured by the device. Ensure <code><a class="el" href="#a53cb9578017d994e7839ac72ea7620d2" title="Request temperature and pressure measurement.">request()</a></code> has been called before using this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">temperature</td><td>Pointer to store the temperature value (°C). </td></tr>
@@ -2103,47 +2194,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the read operation. </dd></dl>
-
-</div>
-</div>
-<a id="a240754385649213cb2bb2d145ff02bcd" name="a240754385649213cb2bb2d145ff02bcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a240754385649213cb2bb2d145ff02bcd">&#9670;&#160;</a></span>readByte()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">DPS310::Result</a> DPS310::readByte </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a></td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read a byte from the sensor. </p>
-<p>Reads a single byte of data from the specified register address.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Register address to read from. </td></tr>
-    <tr><td class="paramname">dst</td><td>Pointer to the variable where the read data will be stored. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating success or failure of the read operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the read operation. </dd></dl>
 
 </div>
 </div>
@@ -2171,7 +2222,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the production and revision ID of the device. </p>
-<p>Retrieves the product ID and revision number to verify the presence of a <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
+<p>Retrieves the product ID and revision number to verify the presence of the device.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">`DPS310::GENUINE_PRODUCT_ID`</td><td>if the device is found and valid. </td></tr>
@@ -2198,8 +2249,41 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Request temperature and pressure measurement. </p>
-<p>Initiates a measurement sequence for both temperature and pressure using the configured settings of the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor.</p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the request. </dd></dl>
+<p>Initiates a measurement sequence for both temperature and pressure using the configured settings of the device.</p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the request. </dd></dl>
+
+</div>
+</div>
+<a id="aca934c953dd801dbb94a9823149f122c" name="aca934c953dd801dbb94a9823149f122c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca934c953dd801dbb94a9823149f122c">&#9670;&#160;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPS310::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the device to a specific state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The state to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2226,8 +2310,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the I2C address of the sensor. </p>
-<p>Configures the I2C address for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor to the provided value.</p>
+<p>Sets the I2C address of the device. </p>
+<p>Configures the I2C address for the device to the provided value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>The <code>Address</code> enum representing the desired I2C address. </td></tr>
@@ -2237,8 +2321,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ace70061f12ead9d69f2236ceaa9c3dc7" name="ace70061f12ead9d69f2236ceaa9c3dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace70061f12ead9d69f2236ceaa9c3dc7">&#9670;&#160;</a></span>setAs()</h2>
+<a id="aa18efc77213c5028b1aa78094dee1233" name="aa18efc77213c5028b1aa78094dee1233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18efc77213c5028b1aa78094dee1233">&#9670;&#160;</a></span>setBit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2247,23 +2331,80 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DPS310::setAs </td>
+          <td class="memname">static void DPS310::setBit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae362155d2eb033c59bce94f6088cbe35">State</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td class="paramtype">uint16_t *const</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the sensor to a specific state. </p>
+<p>Set a single bit in the target word. </p>
+<p>Changes the value of a specific bit in the target word to the given value (0 or 1).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>The state to set. </td></tr>
+    <tr><td class="paramname">target</td><td>Pointer to the word to modify. </td></tr>
+    <tr><td class="paramname">position</td><td>Bit position to modify (from LSB). </td></tr>
+    <tr><td class="paramname">value</td><td>New value for the bit (0 or 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acbbaeb5c192219dc51173abccc9b8f5a" name="acbbaeb5c192219dc51173abccc9b8f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbaeb5c192219dc51173abccc9b8f5a">&#9670;&#160;</a></span>setBit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DPS310::setBit </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a single bit in the target byte. </p>
+<p>Changes the value of a specific bit in the target byte to the given value (0 or 1).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Pointer to the byte to modify. </td></tr>
+    <tr><td class="paramname">position</td><td>Bit position to modify (from LSB). </td></tr>
+    <tr><td class="paramname">value</td><td>New value for the bit (0 or 1). </td></tr>
   </table>
   </dd>
 </dl>
@@ -2297,7 +2438,7 @@ Friends</h2></td></tr>
 <p>Updates the internal error state and logs an appropriate error message based on the cause.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cause</td><td>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> representing the error cause. </td></tr>
+    <tr><td class="paramname">cause</td><td>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> representing the error cause. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2328,10 +2469,112 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the operation mode. </p>
-<p>Updates the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor's operation mode to the specified value.</p>
+<p>Updates the device's operation mode to the specified value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>The <code><a class="el" href="#aeed88f815a7ec27b9b323778089ddf5d" title="Enum class for available operating modes of DPS310.">DPS310::OperationMode</a></code> to set. </td></tr>
+    <tr><td class="paramname">mode</td><td>The <code><a class="el" href="#aeed88f815a7ec27b9b323778089ddf5d" title="Enum class for available operating modes of the device.">DPS310::OperationMode</a></code> to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd2b37f770bbf4a6842827d7c1ab9165" name="abd2b37f770bbf4a6842827d7c1ab9165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2b37f770bbf4a6842827d7c1ab9165">&#9670;&#160;</a></span>setPattern() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DPS310::setPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set multiple bits in the target word. </p>
+<p>Updates a range of bits in the target word with the specified value, starting at the given bit position and spanning the specified width.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Pointer to the word to modify. </td></tr>
+    <tr><td class="paramname">position</td><td>Starting bit position to modify (from LSB). </td></tr>
+    <tr><td class="paramname">value</td><td>The new value to write into the bit range (e.g., 0b101). </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the bit range to modify (in bits). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9650bca4c4e52c100841f8f45498b65" name="ac9650bca4c4e52c100841f8f45498b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9650bca4c4e52c100841f8f45498b65">&#9670;&#160;</a></span>setPattern() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DPS310::setPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *const</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set multiple bits in the target byte. </p>
+<p>Updates a range of bits in the target byte with the specified value, starting at the given bit position and spanning the specified width.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Pointer to the byte to modify. </td></tr>
+    <tr><td class="paramname">position</td><td>Starting bit position to modify (from LSB). </td></tr>
+    <tr><td class="paramname">value</td><td>The new value to write into the bit range (e.g., 0b101). </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the bit range to modify (in bits). </td></tr>
   </table>
   </dd>
 </dl>
@@ -2361,11 +2604,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Configures the sensor settings. </p>
-<p>Updates the temperature and pressure settings for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor using the provided configuration.</p>
+<p>Configures the device settings. </p>
+<p>Updates the temperature and pressure settings for the device using the provided configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">settings</td><td>The <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for DPS310 sensor measurements.">Settings</a></code> structure containing the desired configuration. </td></tr>
+    <tr><td class="paramname">settings</td><td>The <code><a class="el" href="structDPS310_1_1Settings.html" title="Configuration settings for the device measurements.">Settings</a></code> structure containing the desired configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2391,12 +2634,12 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Setup the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. </p>
-<p>Configures the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor with the specified I2C address and settings.</p>
+<p>Setup the device. </p>
+<p>Configures the device with the specified I2C address and settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">address</td><td>The I2C address to use for communication with the sensor (default: PRIMARY). </td></tr>
-    <tr><td class="paramname">settings</td><td>The configuration settings for the sensor (default: DEFAULT preset). </td></tr>
+    <tr><td class="paramname">address</td><td>The I2C address to use for communication with the device (default: PRIMARY). </td></tr>
+    <tr><td class="paramname">settings</td><td>The configuration settings for the device (default: DEFAULT preset). </td></tr>
   </table>
   </dd>
 </dl>
@@ -2418,9 +2661,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Perform a software reset of the sensor. </p>
-<p>Resets the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor to its default state without a hardware power cycle.</p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the reset operation. </dd></dl>
+<p>Perform a software reset of the device. </p>
+<p>Resets the device to its default state without a hardware power cycle.</p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the reset operation. </dd></dl>
 
 </div>
 </div>
@@ -2479,8 +2722,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the sensor state. </p>
-<p>Updates the sensor's state and handles ongoing measurement tasks. This function should be called periodically in the main loop to maintain sensor functionality. </p>
+<p>Update the device state. </p>
+<p>Updates the device's state and handles ongoing measurement tasks. This function should be called periodically in the main loop to maintain device functionality. </p>
 
 </div>
 </div>
@@ -2508,13 +2751,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read and update coefficient values. </p>
-<p>Reads the calibration coefficients from the sensor and updates the internal data used for temperature and pressure compensation.</p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
+<p>Reads the calibration coefficients from the device and updates the internal data used for temperature and pressure compensation.</p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating the success or failure of the operation. </dd></dl>
 
 </div>
 </div>
-<a id="a6c3b0350f9150773bfac947a7a15ba04" name="a6c3b0350f9150773bfac947a7a15ba04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c3b0350f9150773bfac947a7a15ba04">&#9670;&#160;</a></span>writeByte()</h2>
+<a id="a26488f149077216c623f5ef631c466a7" name="a26488f149077216c623f5ef631c466a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26488f149077216c623f5ef631c466a7">&#9670;&#160;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2523,14 +2766,14 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">DPS310::Result</a> DPS310::writeByte </td>
+          <td class="memname"><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4">DPS310::Result</a> DPS310::write </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="#a78dff1806969c21299b20342d6b7823d">Register</a></td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>src</em></span>&#160;)</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>src</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -2540,8 +2783,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Write a byte to the sensor. </p>
-<p>Writes a single byte of data to the specified register address.</p>
+<p>Write 8-bit or 16-bit data via I2C. </p>
+<p>Writes a single or two byte(s) of data to the specified register address.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reg</td><td>Register address to write to. </td></tr>
@@ -2549,7 +2792,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> indicating success or failure of the write operation. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> indicating success or failure of the write operation. </dd></dl>
 
 </div>
 </div>
@@ -2588,7 +2831,7 @@ Friends</h2></td></tr>
 <p>Evaluates whether the provided result is not <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">result</td><td>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> value to evaluate. </td></tr>
+    <tr><td class="paramname">result</td><td>The <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> value to evaluate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2632,7 +2875,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">Result::SUCCESS</a></code> if both results are <code>SUCCESS</code>, otherwise <code>FAILED_UNKNOWN</code>.</dd></dl>
-<p>Combines two <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> values. If both values are <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>; otherwise, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e" title="An unknown error occurred.">DPS310::Result::FAILED_UNKNOWN</a></code>.</p>
+<p>Combines two <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> values. If both values are <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>; otherwise, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e" title="An unknown error occurred.">DPS310::Result::FAILED_UNKNOWN</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The left-hand operand. </td></tr>
@@ -2640,7 +2883,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The combined <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> value. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The combined <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> value. </dd></dl>
 
 </div>
 </div>
@@ -2680,7 +2923,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">Result::SUCCESS</a></code> if either result is <code>SUCCESS</code>, otherwise <code>FAILED_UNKNOWN</code>.</dd></dl>
-<p>Combines two <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> values. If either value is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>; otherwise, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e" title="An unknown error occurred.">DPS310::Result::FAILED_UNKNOWN</a></code>.</p>
+<p>Combines two <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> values. If either value is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c" title="Operation completed successfully.">DPS310::Result::SUCCESS</a></code>; otherwise, the result is <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4acd739c2105cdef08924c505ea1dc590e" title="An unknown error occurred.">DPS310::Result::FAILED_UNKNOWN</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The left-hand operand. </td></tr>
@@ -2688,7 +2931,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The combined <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of DPS310 methods.">DPS310::Result</a></code> value. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The combined <code><a class="el" href="#a74fde4e100a50ee4db0baf53a140a5f4" title="Enum class for operation results of the device methods.">DPS310::Result</a></code> value. </dd></dl>
 
 </div>
 </div>
@@ -2713,8 +2956,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Genuine product ID for the <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. </p>
-<p>This constant stores the expected product ID value for a <a class="el" href="classDPS310.html" title="Header file dependency for DPS310 sensor communication.">DPS310</a> sensor. It is used during initialization to confirm the sensor type and ensure compatibility with the driver. </p>
+<p>Genuine product ID for the device. </p>
+<p>This constant stores the expected product ID value for the device. It is used during initialization to confirm the device type and ensure compatibility with the driver. </p>
 
 </div>
 </div>

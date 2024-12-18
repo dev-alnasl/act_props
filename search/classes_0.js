@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dps310_0',['DPS310',['../classDPS310.html',1,'']]]
+  ['_5fdevice_5f_0',['_DEVICE_',['../class__DEVICE__.html',1,'']]]
 ];

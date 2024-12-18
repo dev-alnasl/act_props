@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['genuine_5fproduct_5fid_0',['GENUINE_PRODUCT_ID',['../classDPS310.html#a7d381bde1cd999c447127b16d7cf8a05',1,'DPS310']]]
+  ['channel_5fconfig_0',['channel_config',['../structADS1x1x_1_1Settings.html#a21e3a923ad04aab08a605c562e67bb4b',1,'ADS1x1x::Settings']]]
 ];

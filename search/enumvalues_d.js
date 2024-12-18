@@ -1,5 +1,22 @@
 var searchData=
 [
-  ['wait_5fbegin_0',['WAIT_BEGIN',['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35a644bc4f59bfee61861265888d0bbf395',1,'DPS310']]],
-  ['wait_5fsetup_1',['WAIT_SETUP',['../classDPS310.html#ae362155d2eb033c59bce94f6088cbe35a126ddbe13cc2a70fad5799aaeb509c13',1,'DPS310']]]
+  ['sampling_5f128hz_0',['SAMPLING_128HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8ea415224cbaa114bf8ac67ee0de4503041',1,'DPS310']]],
+  ['sampling_5f16hz_1',['SAMPLING_16HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8eaf89626dbcff90f41241cc21f9da2061c',1,'DPS310']]],
+  ['sampling_5f1hz_2',['SAMPLING_1HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8ea555463de129a926107fc9e7562d03705',1,'DPS310']]],
+  ['sampling_5f2hz_3',['SAMPLING_2HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8ea81094135d4aef54893d6b7bf1318960b',1,'DPS310']]],
+  ['sampling_5f32hz_4',['SAMPLING_32HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8ea4824cdab051e00833fdf8f60fdbc1525',1,'DPS310']]],
+  ['sampling_5f4hz_5',['SAMPLING_4HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8eade779b9ce9f96a153c058f811c8078dc',1,'DPS310']]],
+  ['sampling_5f64hz_6',['SAMPLING_64HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8ea455e81dd50c9ee8bcdd10efbaa82431e',1,'DPS310']]],
+  ['sampling_5f8hz_7',['SAMPLING_8HZ',['../classDPS310.html#a4c2fc3581d359a772938d97f21052d8eaeb5ab9580ae43e8f47bbdab184191c73',1,'DPS310']]],
+  ['secondary_8',['SECONDARY',['../classDPS310.html#acc63231a5aeb9fa897fe8a8f6734f6cfa371b09d93ca01e09a42fbd5a2a423f8e',1,'DPS310::SECONDARY'],['../class__DEVICE__.html#ab5b68bdcdc2c24d2fab481672cc3affca371b09d93ca01e09a42fbd5a2a423f8e',1,'_DEVICE_::SECONDARY']]],
+  ['sensor_5frdy_9',['SENSOR_RDY',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0a68899f31af31bdddec66361f72015394',1,'DPS310']]],
+  ['soft_5frst0_10',['SOFT_RST0',['../classDPS310.html#ac196da919f8ff5a3b9fa0c4b6846f252afce535b14e317f40be447d49a60fda6a',1,'DPS310']]],
+  ['soft_5frst1_11',['SOFT_RST1',['../classDPS310.html#ac196da919f8ff5a3b9fa0c4b6846f252a0c961953f336eba5ffbc20789aaa170f',1,'DPS310']]],
+  ['soft_5frst2_12',['SOFT_RST2',['../classDPS310.html#ac196da919f8ff5a3b9fa0c4b6846f252ad3737e2ec7d094243389b82b4cac1aa0',1,'DPS310']]],
+  ['soft_5frst3_13',['SOFT_RST3',['../classDPS310.html#ac196da919f8ff5a3b9fa0c4b6846f252a4f868055a2accf2866ad271a5b19aa57',1,'DPS310']]],
+  ['spi_5fmode_14',['SPI_MODE',['../classDPS310.html#acf61e65c284898b407c5bd5661d1eecaa4d7aa7898beee1c19acd8d5b20d2793c',1,'DPS310']]],
+  ['standard_5f16x_15',['STANDARD_16X',['../classDPS310.html#ac02f5f8729d43622189de04a4cb4c55fa613d43a82d096626e7f1c02573663465',1,'DPS310']]],
+  ['standard_5fprecision_5findoor_5fnavigation_16',['STANDARD_PRECISION_INDOOR_NAVIGATION',['../structDPS310_1_1Settings.html#a14d51839cd8f5e3c5debb99e2bc84fbea5ee9292c78a714cebf1b6c2eb3a64158',1,'DPS310::Settings']]],
+  ['standby_17',['STANDBY',['../classDPS310.html#aeed88f815a7ec27b9b323778089ddf5daeea559d5c56d48e94e586f7fe000c0b1',1,'DPS310']]],
+  ['success_18',['SUCCESS',['../classADS1x1x.html#a6174bfbd8dbd8629525b1468b2ea0631ad0749aaba8b833466dfcbb0428e4f89c',1,'ADS1x1x::SUCCESS'],['../classDPS310.html#a74fde4e100a50ee4db0baf53a140a5f4ad0749aaba8b833466dfcbb0428e4f89c',1,'DPS310::SUCCESS'],['../class__DEVICE__.html#a00969ff68aa0808ef1a7c2dd1196f9d1ad0749aaba8b833466dfcbb0428e4f89c',1,'_DEVICE_::SUCCESS']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operationmode_0',['OperationMode',['../classDPS310.html#aeed88f815a7ec27b9b323778089ddf5d',1,'DPS310']]]
+  ['meas_5fcfg_0',['MEAS_CFG',['../classDPS310.html#a5c9d51c38b859ea195cdc5aa44ceeaa0',1,'DPS310']]]
 ];

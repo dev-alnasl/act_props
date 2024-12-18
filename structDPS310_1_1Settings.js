@@ -7,7 +7,7 @@ var structDPS310_1_1Settings =
       [ "HIGH_PRECISION_SPORTS", "structDPS310_1_1Settings.html#a14d51839cd8f5e3c5debb99e2bc84fbeaeb59d6e75b21ff4e93c203ca5ccbd6a2", null ]
     ] ],
     [ "Settings", "structDPS310_1_1Settings.html#abe7e23da864d70beba845c182b557cfe", null ],
-    [ "Settings", "structDPS310_1_1Settings.html#af4141a1fa4ab469c69544d74fd5751d9", null ],
+    [ "Settings", "structDPS310_1_1Settings.html#a04d160818699ebfcc12dfd11ee8e932d", null ],
     [ "Settings", "structDPS310_1_1Settings.html#a387ceea3043527527d3dca93d8391ff2", null ],
     [ "pressure_precision", "structDPS310_1_1Settings.html#a0dfa8adcbe205d74a7eb12e845ce6653", null ],
     [ "pressure_sampling_rate", "structDPS310_1_1Settings.html#a720ae2383f2f8f0ac192e773d5697fb1", null ],

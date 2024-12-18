@@ -32,7 +32,7 @@ var NAVTREE =
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -51,7 +51,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"DPS310_8hpp.html"
+"ADS1x1x_8hpp.html",
+"classDPS310.html#a7cc7c4d9bb1ce501e860f5fc1e77ab76"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
