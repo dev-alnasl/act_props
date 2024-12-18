@@ -3,20 +3,6 @@
  * @file   DPS310.hpp
  * @brief  Interface for the DPS310 barometric pressure sensor.
  *
- * This file provides the declarations for the DPS310 class, which enables
- * configuration, measurement, and calibration of the Infineon DPS310 sensor. The class
- * offers control over temperature and pressure measurement settings, such as sampling
- * rates and precision, and includes altitude calculation based on measured pressure and
- * a reference sea-level pressure.
- *
- * Key Features:
- * - Supports one-shot and standby measurement modes.
- * - Customizable settings for sampling rate, precision, and temperature source.
- * - Predefined configurations for applications like low-power weather monitoring.
- * - Altitude estimation based on pressure readings.
- *
- * @note The class depends on MWX for communication with the DPS310 sensor.
- *
  * @copyright
  * (C) 2024 Mono Wireless Inc. All Rights Reserved.
  * Released under MW-OSSLA-*J,*E (MONO WIRELESS OPEN SOURCE SOFTWARE LICENSE AGREEMENT).
@@ -25,29 +11,26 @@
 #pragma once
 
 /**
- * @brief Header file dependency for DPS310 sensor communication.
+ * @brief Header file dependency.
  *
- * Includes the MWX library, which provides the necessary
- * interfaces for communication and data handling with the DPS310 sensor.
+ * Includes the MWX library, which provides the necessary interfaces for communication.
  */
 #include <TWELITE>
 
 /**
  * @class DPS310
- * @brief Interface for the Infineon DPS310 barometric pressure sensor.
+ * @brief Interface for the device.
  *
- * Provides configuration, measurement, and calibration functions for the DPS310,
- * enabling temperature and pressure sensing with customizable sampling rates,
- * precision, and operating modes.
+ * Provides configuration, measurement, and calibration functions for the device.
  */
 class DPS310 {
 public:
     // MARK: Settings (public)
 
     /**
-     * @brief Enum class defining possible I2C addresses for DPS310.
+     * @brief Enum class defining possible I2C addresses for the device.
      *
-     * The DPS310 sensor can be addressed via two possible I2C addresses:
+     * The DPS310 device can be addressed via two possible I2C addresses:
      * - PRIMARY: 0x77 (default)
      * - SECONDARY: 0x76 (alternative)
      */
@@ -61,9 +44,9 @@ public:
     static constexpr uint8_t use(const Address e) { return static_cast<uint8_t>(e); }
 
     /**
-     * @brief Enum class for available sampling rates for DPS310 measurements.
+     * @brief Enum class for available sampling rates for the device measurements.
      *
-     * Defines the frequency at which the DPS310 can perform measurements.
+     * Defines the frequency at which the device can perform measurements.
      * Higher sampling rates increase measurement frequency but may increase power
      * consumption.
      */
@@ -105,9 +88,9 @@ public:
     static constexpr int use(const Precision e) { return static_cast<int>(e); }
 
     /**
-     * @brief Enum class for available operating modes of DPS310.
+     * @brief Enum class for available operating modes of the device.
      *
-     * Defines the modes in which the DPS310 sensor can operate,
+     * Defines the modes in which the device can operate,
      * allowing for control over one-shot and continuous measurement modes.
      */
     enum class OperationMode : uint8_t {
@@ -142,7 +125,7 @@ public:
     static constexpr int use(const TemperatureSource e) { return static_cast<int>(e); }
 
     /**
-     * @brief Configuration settings for DPS310 sensor measurements.
+     * @brief Configuration settings for the device measurements.
      *
      * This structure encapsulates user-configurable settings for both temperature
      * and pressure measurements, allowing control over sampling rate, precision,
@@ -192,10 +175,10 @@ public:
          * @param pp Pressure precision.
          */
         Settings(SamplingRate tsr = SamplingRate::SAMPLING_1HZ,
-                 Precision tp = Precision::STANDARD_16X,
+                 Precision tp = Precision::LOW_1X,
                  TemperatureSource tsc = TemperatureSource::MEMS_HIGH_PRECISION,
                  SamplingRate psr = SamplingRate::SAMPLING_1HZ,
-                 Precision pp = Precision::STANDARD_16X)
+                 Precision pp = Precision::LOW_2X)
             : temperature_sampling_rate(tsr), temperature_precision(tp),
               temperature_source(tsc), pressure_sampling_rate(psr),
               pressure_precision(pp) {}
@@ -203,7 +186,7 @@ public:
         /**
          * @brief Constructor for initializing settings with a preset configuration.
          *
-         * This constructor allows users to initialize sensor settings
+         * This constructor allows users to initialize device settings
          * using predefined configurations tailored for specific applications.
          *
          * @param preset The preset configuration to apply.
@@ -305,10 +288,10 @@ private:
     }
 
     /**
-     * @brief Genuine product ID for the DPS310 sensor.
+     * @brief Genuine product ID for the device.
      *
-     * This constant stores the expected product ID value for a DPS310 sensor. It is
-     * used during initialization to confirm the sensor type and ensure compatibility
+     * This constant stores the expected product ID value for the device. It is
+     * used during initialization to confirm the device type and ensure compatibility
      * with the driver.
      */
     static const uint8_t GENUINE_PRODUCT_ID = 0x10;
@@ -317,28 +300,28 @@ private:
     // MARK: States (private)
 
     /**
-     * @brief Enumeration of internal states for the DPS310 sensor.
+     * @brief Enumeration of internal states for the device.
      *
-     * Represents the various operational and transitional states of the DPS310 sensor
-     * during its lifecycle. These states are used internally to manage sensor behavior,
+     * Represents the various operational and transitional states of the device
+     * during its lifecycle. These states are used internally to manage device behavior,
      * ensuring proper sequencing for measurement and data retrieval.
      *
      * States:
      * - `WAIT_SETUP`: Waiting for initial setup to complete.
-     * - `WAIT_BEGIN`: Waiting for the sensor to begin operation.
-     * - `IDLE`: Sensor is idle and ready for a new measurement.
+     * - `WAIT_BEGIN`: Waiting for the device to begin operation.
+     * - `IDLE`: Device is idle and ready for a new measurement.
      * - `TEMP_BUSY`: A temperature measurement is in progress.
      * - `TEMP_COMPLETE`: Temperature measurement completed successfully.
      * - `TEMP_ERROR`: An error occurred during temperature measurement.
      * - `PRES_BUSY`: A pressure measurement is in progress.
      * - `PRES_COMPLETE`: Pressure measurement completed successfully.
      * - `PRES_ERROR`: An error occurred during pressure measurement.
-     * - `AVAILABLE`: Sensor data is ready to be read.
+     * - `AVAILABLE`: Data is ready to be read.
      */
     enum class State : int {
         WAIT_SETUP,       ///< Waiting for setup to complete.
         WAIT_BEGIN,       ///< Waiting to begin operation.
-        IDLE,             ///< Sensor is idle and ready for a new measurement.
+        IDLE,             ///< Device is idle and ready for a new measurement.
         TEMP_BUSY,        ///< Temperature measurement in progress.
         TEMP_COMPLETE,    ///< Temperature measurement successful.
         TEMP_ERROR,       ///< Error during temperature measurement.
@@ -353,30 +336,30 @@ private:
     static constexpr int use(const State e) { return static_cast<int>(e); }
 
     /**
-     * @brief Sets the sensor to a specific state.
+     * @brief Sets the device to a specific state.
      * @param state The state to set.
      */
-    inline void setAs(const State state) { _state = state; }
+    inline void set(const State state) { _state = state; }
 
     /**
-     * @brief Checks if the sensor is in a specific state.
+     * @brief Checks if the device is in a specific state.
      * @param state The state to check against.
-     * @return `true` if the sensor is in the specified state; `false` otherwise.
+     * @return `true` if the device is in the specified state; `false` otherwise.
      */
-    inline bool isIn(const State state) { return _state == state; }
+    inline bool in(const State state) { return _state == state; }
 
 public:
     // MARK: Results (public)
     /**
-     * @brief Enum class for operation results of DPS310 methods.
+     * @brief Enum class for operation results of the device methods.
      *
-     * Represents the status of operations performed by DPS310 methods.
+     * Represents the status of operations performed by the device methods.
      * Used to indicate success or specific failure reasons.
      */
     enum class Result : int32_t {
         SUCCESS,                  ///< Operation completed successfully.
-        FAILED_NOT_RESPONDING,    ///< Sensor is not responding.
-        FAILED_BUSY,              ///< Sensor is busy with another operation.
+        FAILED_NOT_RESPONDING,    ///< Device is not responding.
+        FAILED_BUSY,              ///< Device is busy with another operation.
         FAILED_UNKNOWN            ///< An unknown error occurred.
     };
 
@@ -409,10 +392,10 @@ private:
     // MARK: Registers (private)
 
     /**
-     * @brief Enum class representing I2C register addresses for the DPS310 sensor.
+     * @brief Enum class representing I2C register addresses for the device.
      *
      * This enumeration defines all the register addresses used for configuring and
-     * operating the DPS310 sensor. Registers include those for reading raw data,
+     * operating the device. Registers include those for reading raw data,
      * configuring sampling rates and precision, managing interrupts, and storing
      * calibration coefficients.
      *
@@ -615,7 +598,7 @@ private:
 private:
     // MARK: Variables (private)
 
-    /// Current state of the sensor
+    /// Current state of the device
     State _state;
 
     /// Last encountered error
@@ -624,10 +607,10 @@ private:
     /// Error message corresponding to the last error
     char _error_message[49];
 
-    /// I2C address of the sensor
+    /// I2C address of the device
     Address _address;
 
-    /// Configuration settings for the sensor
+    /// Configuration settings for the device
     Settings _settings;
 
     /// Current operational mode
@@ -681,9 +664,9 @@ public:
     // MARK: Const/Destructor (public)
 
     /**
-     * @brief Constructor for the DPS310 class.
+     * @brief Constructor for the device interface.
      *
-     * Initializes the DPS310 sensor object with default settings, state, and error
+     * Initializes the device object with default settings, state, and error
      * status.
      */
     DPS310()
@@ -693,7 +676,7 @@ public:
           _operation_mode(OperationMode::STANDBY), _coef { 0 }, _values { 0 } {}
 
     /**
-     * @brief Destructor for the DPS310 class.
+     * @brief Destructor for the device interface.
      *
      * Cleans up any resources or states before the object is destroyed.
      */
@@ -706,44 +689,44 @@ public:
      * @brief Retrieves the latest error message.
      *
      * Provides the most recent error message encountered during
-     * the operation of the DPS310 sensor.
+     * the operation of the device.
      *
      * @return A pointer to the character array containing the error message.
      */
     inline char* getErrorMessage() { return _error_message; }
 
     /**
-     * @brief Retrieves the I2C address of the sensor.
+     * @brief Retrieves the I2C address of the device.
      *
-     * Provides the currently configured I2C address of the DPS310 sensor.
+     * Provides the currently configured I2C address of the device.
      *
      * @return The `Address` enum representing the I2C address.
      */
     inline Address getAddress() const { return _address; }
 
     /**
-     * @brief Sets the I2C address of the sensor.
+     * @brief Sets the I2C address of the device.
      *
-     * Configures the I2C address for the DPS310 sensor to the provided value.
+     * Configures the I2C address for the device to the provided value.
      *
      * @param address The `Address` enum representing the desired I2C address.
      */
     inline void setAddress(const Address address) { _address = address; }
 
     /**
-     * @brief Retrieves the current sensor settings.
+     * @brief Retrieves the current device settings.
      *
      * Provides access to the current temperature and pressure settings
-     * configured for the DPS310 sensor.
+     * configured for the device.
      *
      * @return A reference to the `Settings` structure containing the configuration.
      */
     inline Settings& getSettings() { return _settings; }
 
     /**
-     * @brief Configures the sensor settings.
+     * @brief Configures the device settings.
      *
-     * Updates the temperature and pressure settings for the DPS310 sensor
+     * Updates the temperature and pressure settings for the device
      * using the provided configuration.
      *
      * @param settings The `Settings` structure containing the desired configuration.
@@ -757,7 +740,7 @@ private:
      * @brief Retrieves the latest error cause.
      *
      * Provides the most recent error encountered during the operation
-     * of the DPS310 sensor.
+     * of the device.
      *
      * @return The `DPS310::Result` indicating the error cause.
      */
@@ -792,7 +775,7 @@ private:
     /**
      * @brief Retrieves the current operation mode.
      *
-     * Provides the current operating mode of the DPS310 sensor.
+     * Provides the current operating mode of the device.
      *
      * @return The `DPS310::OperationMode` representing the current mode.
      */
@@ -801,7 +784,7 @@ private:
     /**
      * @brief Sets the operation mode.
      *
-     * Updates the DPS310 sensor's operation mode to the specified value.
+     * Updates the device's operation mode to the specified value.
      *
      * @param mode The `DPS310::OperationMode` to set.
      */
@@ -811,13 +794,13 @@ public:
     // MARK: Interfaces (public)
 
     /**
-     * @brief Setup the DPS310 sensor.
+     * @brief Setup the device.
      *
-     * Configures the DPS310 sensor with the specified I2C address and settings.
+     * Configures the device with the specified I2C address and settings.
      *
-     * @param address The I2C address to use for communication with the sensor (default:
+     * @param address The I2C address to use for communication with the device (default:
      * PRIMARY).
-     * @param settings The configuration settings for the sensor (default: DEFAULT
+     * @param settings The configuration settings for the device (default: DEFAULT
      * preset).
      */
     void setup(const Address address = Address::PRIMARY,
@@ -826,47 +809,47 @@ public:
     /**
      * @brief Begin measurements.
      *
-     * Initializes the sensor and prepares it for operation, starting measurement
+     * Initializes the device and prepares it for operation, starting measurement
      * processes.
      */
     void begin();
 
     /**
-     * @brief Update the sensor state.
+     * @brief Update the device state.
      *
-     * Updates the sensor's state and handles ongoing measurement tasks. This function
-     * should be called periodically in the main loop to maintain sensor functionality.
+     * Updates the device's state and handles ongoing measurement tasks. This function
+     * should be called periodically in the main loop to maintain device functionality.
      */
     void update();
 
     /**
      * @brief End measurements.
      *
-     * Stops the measurement processes and powers down the sensor.
+     * Stops the measurement processes and powers down the device.
      */
     void end();
 
     /**
      * @brief Check if data is available for reading.
      *
-     * Determines if the sensor has completed measurements and the data is ready for
+     * Determines if the device has completed measurements and the data is ready for
      * retrieval.
      *
      * @return `true` if data is available; otherwise, `false`.
      */
-    inline bool available() { return isIn(DPS310::State::AVAILABLE); }
+    inline bool available() { return in(DPS310::State::AVAILABLE); }
 
     /**
-     * @brief Prepare the sensor for sleep mode.
+     * @brief Prepare the device for sleep mode.
      *
-     * Performs any necessary steps to put the sensor into a low-power state.
+     * Performs any necessary steps to put the device into a low-power state.
      */
     inline void onSleep() const {}
 
     /**
-     * @brief Wake the sensor from sleep mode.
+     * @brief Wake the device from sleep mode.
      *
-     * Restores the sensor from a low-power state, preparing it for operation.
+     * Restores the device from a low-power state, preparing it for operation.
      */
     inline void onWakeup() const {}
 
@@ -874,7 +857,7 @@ public:
      * @brief Request temperature and pressure measurement.
      *
      * Initiates a measurement sequence for both temperature and pressure
-     * using the configured settings of the DPS310 sensor.
+     * using the configured settings of the device.
      *
      * @return `DPS310::Result` indicating the success or failure of the request.
      */
@@ -883,7 +866,7 @@ public:
     /**
      * @brief Read temperature and pressure data after a measurement request.
      *
-     * Retrieves the temperature and pressure data measured by the sensor.
+     * Retrieves the temperature and pressure data measured by the device.
      * Ensure `request()` has been called before using this method.
      *
      * @param temperature Pointer to store the temperature value (°C).
@@ -906,9 +889,9 @@ public:
     }
 
     /**
-     * @brief Perform a software reset of the sensor.
+     * @brief Perform a software reset of the device.
      *
-     * Resets the DPS310 sensor to its default state without a hardware power cycle.
+     * Resets the device to its default state without a hardware power cycle.
      *
      * @return `DPS310::Result` indicating the success or failure of the reset
      * operation.
@@ -918,16 +901,14 @@ public:
     /**
      * @brief Read the production and revision ID of the device.
      *
-     * Retrieves the product ID and revision number to verify the presence of a DPS310
-     * sensor.
+     * Retrieves the product ID and revision number to verify the presence of the device.
      *
      * @retval `DPS310::GENUINE_PRODUCT_ID` if the device is found and valid.
      * @retval `0` if the device is not found or invalid.
      */
     inline uint8_t readId() {
         uint8_t id;
-        return (readByte(DPS310::Register::PRODUCT_ID, &id)
-                == DPS310::Result::SUCCESS) ?
+        return (read(DPS310::Register::PRODUCT_ID, &id) == DPS310::Result::SUCCESS) ?
             id :
             0;
     }
@@ -938,7 +919,7 @@ private:
     /**
      * @brief Apply saved pressure configurations from settings.
      *
-     * Updates the sensor's pressure measurement settings based on the
+     * Updates the device's pressure measurement settings based on the
      * current configuration stored in the `Settings` structure.
      *
      * @return `DPS310::Result` indicating the success or failure of the operation.
@@ -948,7 +929,7 @@ private:
     /**
      * @brief Apply saved temperature configurations from settings.
      *
-     * Updates the sensor's temperature measurement settings based on the
+     * Updates the device's temperature measurement settings based on the
      * current configuration stored in the `Settings` structure.
      *
      * @return `DPS310::Result` indicating the success or failure of the operation.
@@ -958,7 +939,7 @@ private:
     /**
      * @brief Apply the given operation mode.
      *
-     * Configures the sensor to operate in the specified mode.
+     * Configures the device to operate in the specified mode.
      *
      * @param mode The `OperationMode` to apply.
      * @return `DPS310::Result` indicating the success or failure of the operation.
@@ -968,7 +949,7 @@ private:
     /**
      * @brief Read and update coefficient values.
      *
-     * Reads the calibration coefficients from the sensor and updates
+     * Reads the calibration coefficients from the device and updates
      * the internal data used for temperature and pressure compensation.
      *
      * @return `DPS310::Result` indicating the success or failure of the operation.
@@ -979,7 +960,7 @@ private:
     // MARK: Common I2C utils (private)
 
     /**
-     * @brief Read a byte from the sensor.
+     * @brief Read 8-bit data via I2C.
      *
      * Reads a single byte of data from the specified register address.
      *
@@ -987,56 +968,102 @@ private:
      * @param dst Pointer to the variable where the read data will be stored.
      * @return A `DPS310::Result` indicating success or failure of the read operation.
      */
-    Result readByte(const Register reg, uint8_t* const dst);
+    Result read(const Register reg, uint8_t* const dst);
 
     /**
-     * @brief Write a byte to the sensor.
+     * @brief Read 16-bit data via I2C.
      *
-     * Writes a single byte of data to the specified register address.
+     * Reads 2 bytes of data from the specified register address.
+     *
+     * @param reg Register address to read from.
+     * @param dst Pointer to the variable where the read data will be stored.
+     * @return A `DPS310::Result` indicating success or failure of the read operation.
+     */
+    Result read(const Register reg, uint16_t* const dst);
+
+    /**
+     * @brief Write 8-bit or 16-bit data via I2C.
+     *
+     * Writes a single or two byte(s) of data to the specified register address.
      *
      * @param reg Register address to write to.
      * @param src Data byte to write.
      * @return A `DPS310::Result` indicating success or failure of the write operation.
      */
-    Result writeByte(const Register reg, const uint8_t src);
+    Result write(const Register reg, const int src);
 
 private:
     // MARK: Common byte utils (private)
 
     /**
-     * @brief Modify a single bit in the target byte.
+     * @brief Set a single bit in the target byte.
      *
      * Changes the value of a specific bit in the target byte to the given value (0 or
      * 1).
      *
      * @param target Pointer to the byte to modify.
-     * @param value_shift Bit position to modify (from LSB).
+     * @param position Bit position to modify (from LSB).
      * @param value New value for the bit (0 or 1).
      */
-    inline static void
-    modifyByte(uint8_t* const target, const int value_shift, const int value) {
+    static inline void
+    setBit(uint8_t* const target, const int position, const int value) {
         if (value > 0) {
-            *target |= (1 << value_shift);
+            *target |= (1U << position);
         } else {
-            *target &= ~(1 << value_shift);
+            *target &= ~(1U << position);
         }
     }
 
     /**
-     * @brief Modify multiple bits in the target byte.
+     * @brief Set a single bit in the target word.
+     *
+     * Changes the value of a specific bit in the target word to the given value (0 or
+     * 1).
+     *
+     * @param target Pointer to the word to modify.
+     * @param position Bit position to modify (from LSB).
+     * @param value New value for the bit (0 or 1).
+     */
+    static inline void
+    setBit(uint16_t* const target, const int position, const int value) {
+        if (value > 0) {
+            *target |= (1U << position);
+        } else {
+            *target &= ~(1U << position);
+        }
+    }
+
+    /**
+     * @brief Set multiple bits in the target byte.
      *
      * Updates a range of bits in the target byte with the specified value, starting at
      * the given bit position and spanning the specified width.
      *
      * @param target Pointer to the byte to modify.
-     * @param value_shift Starting bit position to modify (from LSB).
+     * @param position Starting bit position to modify (from LSB).
      * @param value The new value to write into the bit range (e.g., 0b101).
-     * @param value_bits Width of the bit range to modify (in bits).
+     * @param width Width of the bit range to modify (in bits).
      */
-    inline static void modifyByte(uint8_t* const target, const int value_shift,
-                                  const int value, const int value_bits) {
-        *target = (*target & ~((0xFF >> (8 - value_bits)) << value_shift))
-            | (value << value_shift);
+    static inline void setPattern(uint8_t* const target, const int position,
+                                  const int value, const int width) {
+        *target =
+            (*target & ~((0xFF >> (8 - width)) << position)) | (value << position);
+    }
+
+    /**
+     * @brief Set multiple bits in the target word.
+     *
+     * Updates a range of bits in the target word with the specified value, starting at
+     * the given bit position and spanning the specified width.
+     *
+     * @param target Pointer to the word to modify.
+     * @param position Starting bit position to modify (from LSB).
+     * @param value The new value to write into the bit range (e.g., 0b101).
+     * @param width Width of the bit range to modify (in bits).
+     */
+    void setPattern(uint16_t* target, int position, int value, int width) {
+        *target =
+            (*target & ~((0xFFFF >> (16 - width)) << position)) | (value << position);
     }
 
     /**
@@ -1048,7 +1075,20 @@ private:
      * @param bit The bit position to check (from LSB).
      * @return `true` if the specified bit is set; otherwise, `false`.
      */
-    inline static bool bitIsSet(const uint8_t target, const int bit) {
+    static inline bool hasBitSet(const uint8_t target, const int bit) {
+        return target & (1U << bit);
+    }
+
+    /**
+     * @brief Check if a specific bit is set in a target word.
+     *
+     * Determines whether the specified bit in the target word is set.
+     *
+     * @param target The word to check.
+     * @param bit The bit position to check (from LSB).
+     * @return `true` if the specified bit is set; otherwise, `false`.
+     */
+    static inline bool hasBitSet(const uint16_t target, const int bit) {
         return target & (1U << bit);
     }
 
@@ -1064,8 +1104,25 @@ private:
      * @param width Width of the bit pattern (in bits).
      * @return `true` if the bit pattern is set; otherwise, `false`.
      */
-    inline static bool
-    bitsAreSet(const uint8_t target, const int shift, const int bits, const int width) {
+    static inline bool hasPattern(const uint8_t target, const int shift,
+                                     const int bits, const int width) {
+        return ((target >> shift) & ((1U << width) - 1)) == bits;
+    }
+
+    /**
+     * @brief Check if specific bits are set in a target word.
+     *
+     * Determines whether a specific bit pattern is present in the target word,
+     * starting at a given position and spanning the specified width.
+     *
+     * @param target The word to check.
+     * @param shift Starting bit position to check (from LSB).
+     * @param bits The bit pattern to verify (e.g., 0b101).
+     * @param width Width of the bit pattern (in bits).
+     * @return `true` if the bit pattern is set; otherwise, `false`.
+     */
+    static inline bool hasPattern(const uint16_t target, const int shift,
+                                     const int bits, const int width) {
         return ((target >> shift) & ((1U << width) - 1)) == bits;
     }
 
@@ -1083,14 +1140,14 @@ private:
      * @param bit_length The bit length of the input value.
      * @return The two's complement representation of the input value.
      */
-    inline static int32_t twosComplement(int32_t raw_value, const int bit_length) {
+    static inline int32_t twosComplement(int32_t raw_value, const int bit_length) {
         // Check if the sign bit is set by shifting to the sign bit position
-        if (raw_value & (1 << (bit_length - 1))) {
+        if (raw_value & (1U << (bit_length - 1))) {
             // Perform sign extension by setting upper bits to 1
-            raw_value |= ~((1 << bit_length) - 1);
+            raw_value |= ~((1U << bit_length) - 1);
         } else {
             // Clear upper bits to zero for positive numbers
-            raw_value &= (1 << bit_length) - 1;
+            raw_value &= (1U << bit_length) - 1;
         }
         return raw_value;
     }
@@ -1112,7 +1169,8 @@ bool operator!(DPS310::Result result);
  * @brief Logical AND operator for combining `DPS310::Result` values.
  *
  * Combines two `DPS310::Result` values. If both values are `DPS310::Result::SUCCESS`,
- * the result is `DPS310::Result::SUCCESS`; otherwise, the result is `DPS310::Result::FAILED_UNKNOWN`.
+ * the result is `DPS310::Result::SUCCESS`; otherwise, the result is
+ * `DPS310::Result::FAILED_UNKNOWN`.
  *
  * @param lhs The left-hand operand.
  * @param rhs The right-hand operand.
@@ -1124,7 +1182,8 @@ DPS310::Result operator&&(DPS310::Result lhs, DPS310::Result rhs);
  * @brief Logical OR operator for combining `DPS310::Result` values.
  *
  * Combines two `DPS310::Result` values. If either value is `DPS310::Result::SUCCESS`,
- * the result is `DPS310::Result::SUCCESS`; otherwise, the result is `DPS310::Result::FAILED_UNKNOWN`.
+ * the result is `DPS310::Result::SUCCESS`; otherwise, the result is
+ * `DPS310::Result::FAILED_UNKNOWN`.
  *
  * @param lhs The left-hand operand.
  * @param rhs The right-hand operand.
